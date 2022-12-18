@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="fr">  
+    <head>
+        <title id="Title">Présentation sur Internet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="img/RT-stmalo-condense-950x347.ico">
+        <script src="./js/headerstate.js"> </script>
+        <script src="./js/onload_scripts.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+
+    <!-----------------------------------------------Principal----------------------------------------------->
+    <body class="bg-dark text-white bg-gradient">
+        <header id="header" class="py-4 mb-4 shadow-lg p-3 mb-5 rounded bg-primary bg-gradient sticky-top">
+            <div class="row align-items-end">
+                <div class="col-8 d-flex justify-content-end order-2">
+                    <div class="jumbotron mt-4 text-light" id="entete">
+                        <h1 class="display-4" id="prnm_nm">Adrien Crico</h1>
+                    </div>
+                </div>
+                <div class="col-4 order-1">
+                    <div class="collapse" id="navbarToggleCont">
+                        <div id="navigation_bar" class="text-white">
+                            <div class="nav nav-pills">
+                                <li class="nav-item"> <a class="nav-link link-light" href="page1.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
+                            </div>
+                            <div class="nav nav-pills">
+                                <li class="nav-item" scope="col"><a class="nav-link link-light" href="page3.html">Carrière</a></li>
+                                <li class="nav-item"><a class="nav-link link-light" href="page4.html">Timeline</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><a class="dropdown-item link-light" href="#" aria-current="page">Carousel de la vie</a></li>
+                                        <li><a class="dropdown-item link-light" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
+                                        <li><hr class="dropdown-divider bg-info"></li> <!-- Divider-->  
+                                    </ul>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                    <div class="input-group w-50 py-3 ">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control input-text" id="searchbar" placeholder="search in my life.." aria-label="search in my life..">
+                        
+                        <div class="col-sm-1">
+                            <button id="btnNav" type="button" class="btn-block shadow-none navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleCont" aria-controls="navbarToggleCont">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
+                                  </svg><span class="visually-hidden">O</span>
+                            </button>
+                            <style> /*Pour permettre à l'utilisateur de cliquer au travers un svg*/
+                                svg {
+                                    pointer-events: none;
+                                    }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="visually-hidden" id="cow">
+            <figure>
+            <pre role="img" aria-label="ASCII COW" class="">
+                ___________________________
+            &lt; You can't count on that yet. &gt;
+                ---------------------------
+                    \   ^__^
+                     \  (oo)\_______
+                        (__)\       )\/\
+                            ||----w |
+                            ||     ||
+            </pre>
+            <button type="button" id="byecow" class="btn btn-danger" title="yes">remove cow?</button>
+            </figure>
+        </div>
+
+        <!--------------------------------------------- Articles --------------------------------------------------->
+
+        <div class="jumbotron" id="Mon Skyblog">
+            <h1 class="display-4 mx-3">Articles</h1>
+            <hr class="my-4">
+        </div>
+
+        <article class="container bg-dark border border-4 rounded-3 shadow my-5 p-3">
+            <h2 class="blog-post-title mb-1">Blog #2</h2>
+            <img src="img/flagmalo.fr.ico" width="150px" height="150px" class="float-end mx-5">
+            <p class="blog-post-meta">November 26, 2022 by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+    
+            <hr>
+            <h2>CTF Flag'Malo 2022</h2>
+            <p>Ce 26 novembre a pris place la 6ème édition du CTF Flag'Malo !</p>
+            <blockquote class="blockquote">
+              <p>En quoi cet évenement consiste-il ?</p>
+            </blockquote>
+            <p>
+                Ce jour très attendu et populaire invite les étudiants de l'IUT de Saint-Malo, ses professeurs, et les lycéens de la ville de Saint-Malo, à
+                résoudre des énigmes autour de la cybersécurité.
+                Ce CTF (Capture The Flag) est organisé par les étudiants de deuxième année de DUT Réseaux & Télécommunication de Saint-Malo.
+            </p>
+            <h3>Une première</h3>
+            <p>
+            J'ai participé pour la première fois (et sûrement pas la dernière) à un CTF avec l'équipe 'nocap' ! Notre groupe de 5 se composait de :     
+            </p>            
+            <ul>
+              <li>Kronos</li>
+              <li>eddymalou27</li>
+              <li>Chepa</li>
+              <li>MoLam</li>
+              <li>pochoyy (moi) </li> 
+            </ul>
+            <p>De 9h à 18h, nous avons travaillé sans relâche.</p>
+            <p>L'organisation était parfaite, l'évenement bien encadré, avec de la nourriture et des goodies pour tout le monde (par exemple des stickers <a target="_blank" class="link-danger" href="https://www.yeswehack.com/fr/" class="">YesWeHack</a> <i>:o</i>) pour chaque membres de l'escouade.</p>
+            <p>Une liste des définitions et des liens de références pour votre documententation personnelle :</p>
+            
+            <p>
+                Téléchargez <a class="link-info" href="#">ici</a> mon WriteUp sur l'un des challenges d'Obuscation Javascript présenté dans la liste de challenges. A noter que l'ensemble des défis sont à retrouver sur <a target="_blank" href="https://github.com/bWlrYQ">github</a>.
+             </p>
+            <dl>
+              <dt>Capture The Flag (CTF)</dt>
+              <dd>Un CTF est en général composé de plusieurs épreuves réparties dans différentes catégories et pour différents niveaux, du plus facile au plus difficile. Savoir dans quelle catégorie se trouve un challenge peut aider à l’appréhender.</dd>
+              <dt>JavaScript (JS)</dt>
+              <dd>Un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les développeurs web.</dd>
+            </dl>
+        </article>
+
+        <article class="container bg-dark border border-3 rounded-2 shadow my-5 p-3">
+            <h2 class="blog-post-title mb-1">Blog #1</h2>
+            <p class="blog-post-meta">November 21, 2022 by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+    
+            <hr>
+            <h2>Ghibli Studio</h2>
+            <p>Dans le cadre d'une présentation en cours d'anglais, et pour lequel le sujet imposé était
+                 l'une de nos passions, j'ai présenté le Studio Ghibli qui venait tout juste d'ouvrir son parc au public japonais</p>
+            <blockquote class="blockquote">
+              <p>Ghibli Museum & Theme Park located in Japan opening its door to visitors !</p>
+            </blockquote>
+            <h3>A world renowned Animation Studio from Japan</h3>
+            <p>
+                Here I will be focused on Ghibli Studio art works, animated movie, not only in cooperation with the world famous artist Myiazaki. I’ve watched many times each of ~23movies as a child and I will keep this path, and love every one of them. except for Omohide poro poro which is a very boring movie.
+                <br/>
+                Actually, my presentation is well-timed because this month, the Ghibli Musuem & Theme Park is opening its doors in Japan. It’s a really exciting for every fans of Ghibli movies scattered all over the world. To make it more specific, this is equivalent to a DisneyLand but in Japan with Studio Ghibli works.
+            </p>  
+            <img src="img/ghiblipark.jpg" class="img-fluid p-2 float-end" onmouseover="caGrandit(this)" onmouseout="retourNormal(this)" height="160px" width="220px" />
+            <script>
+                function caGrandit(park) {
+                    park.style.height ="530px"
+                    park.style.width ="680px"
+                }
+                function retourNormal(park) {
+                    park.style.height ="160px"
+                    park.style.width ="220px"
+                }
+            </script>         
+            <p>
+                I was tricked by a videogames / young culture magazine, they announced in a well-written article a theme
+                 park with rollecoasters and this picture on the left was linked (made from disneyland park schemes)<br/>
+                You can find the fan's drawing <a target="_blank" href="https://twitter.com/takumitoxin/status/561730029646659584" class="link-warning">there</a>.
+            </p>
+
+            <p>
+                What is Studio Ghibli ? I litterally compared it as a Disney equivalent made in Japan but that’s not it. These are both entirely unique entities : <br/>
+
+                Origin : before my research, I never thought about the producers, who were behind this tremendous work ? Without surprise I learned that Miyazaki was one of the founder.
+
+                Most of the films produced by Studio Ghibli were written and directed by Miyazaki. His son joined the company and already made its proof as a film director.
+            </p>
+            <p>
+                <em>First</em>, there was Topcraft, but the studio went bankrupt and dissolved on <i>June 15, 1985</i>, essentially splitting the studio in half. Hayao Miyazaki, Toshio Suzuki and Isao Takahata formed Studio Ghibli.
+
+                How many movies, etc : hand-drawn animation, recently releases a 3D animation using computer generated imagery (CGI) film. It provocked a lot of panic among fans but eventually I watched it and in my opinion they still made a great use of this new technology.
+            </p>
+            <p>
+
+                His last animation is nearly finished, even if this story-writer is well-known for announcing his retiring but still going on :
+
+                And the great pianist who made these awe inspiring music themes we all heard at least one time, either in an airport, or at highschool during every lunch breaks
+
+                <strong>Joe Hisaïshi</strong> followed Miyazaki in almost every movies he made, I guess. They have an alchemy, their works are very homogenic.
+            </p>
+                <div class="col-lg-6 card bg-dark bg-gradient border my-4 mx-auto">
+                    <div class="card-header d-inline bg-gradient rounded-bottom">One song among every masterpieces he made :</div>
+                    <div class="card-body mx-auto">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hsbFHkK3s9o?controls=0&amp;start=31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;volume" allowfullscreen></iframe>
+                       <blockquote> <em>Joe Hisaishi performing in Nantes - october 2022</em> </blockquote>
+                    </div>
+                </div>
+                So, this Ghibli Museum is open since<em> 1st of November</em>, and I hope I will be able to travel to this country, even if it’s only one night, I don’t mind, I just want to see Totoro’s House Replica and buy the most merchandises I can. 
+
+                Tickets to overseas visitors are not on sale now, and the release date will be announced on their website, and it's not bad because we had 1 week of vacations and the park is not over yet which means many areas are under-constuctions.
+
+                (The park's website warns visitors that "there are no big attractions or rides in <strong> Ghibli Park</strong>.")
+            </p>
+            <h4>Some Great Titles to begin with !</h4>
+            <p>I don't have a favourite one, but this list groups some great ones if you are interested by this animation studio</p>
+                <ul>
+                    <li>My Neighbor Totoro</li>
+                    <li>Nausicaä of the Valley of the Wind</li>
+                    <li>Howl's Moving Castle</li>
+                </ul>
+
+            <p>A list of definitions and reference links for your personal documentation :</p>
+            <p>Find here a great article : <a role="button" target="_blank" class="link-success">https://philstarlife.com/living/299567-japan-studio-ghibli-theme-park-opens</a>
+            </p>
+            <dl class="d-grid gap-1">
+              <dt>Hayao Miyazaki, All-star artist-drawer<dt>
+              <dd>
+                Hayao Miyazaki (宮崎 駿, Miyazaki Hayao, [mijaꜜzaki hajao]; born January 5, 1941) is a Japanese animator, director, producer, 
+                screenwriter, author, and manga artist. A co-founder of Studio Ghibli, he has attained international
+                acclaim as a masterful storyteller and creator of 
+                Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.
+              </dd>
+              <dt>Joe Hisaishi, Maestro and pianist of genius</dt>
+                <dd>Mamoru Fujisawa (藤澤 守, Fujisawa Mamoru, born December 6, 1950), known professionally as Joe Hisaishi 
+                    (久石 譲, Hisaishi Jō), is a Japanese composer,
+                    musical director, conductor and pianist, known for over 100 film scores and solo albums
+                    dating back to 1981
+                </dd>
+              <dt>Computer Generated Imagery (CGI)</dt>
+                <dd>It's the use of computer graphics to create or contribute to images in art, printed media, video games, simulators, and visual effects in films, television programs, shorts,
+                    commercials, and videos. The images may be static (still images) or dynamic (moving images), in which case CGI is also called computer animation. CGI may be two-dimensional (2D),
+                    although the term "CGI" is most commonly used to refer to the 3-D computer graphics used for creating 
+                    characters, scenes and special effects in films and television, which is described as "CGI animation"
+                </dd>
+            </dl>
+            
+
+        </article>
+        <!--------------------------------------------- Pied de page --------------------------------------------------->
+        <footer class="footer px-5">
+            <div class="row p-3 rounded bg-dark text-white">
+                <div class="d-sm-flex justify-content-between">
+                    <div class="col-sm-1">
+                        <a href="https://iut-stmalo.univ-rennes1.fr/">
+                            <img class="mt-4 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
+                        </a>
+                        <a href="https://iut-stmalo.univ-rennes1.fr/">
+                            <img class="mt-5" src="img/RT-St-malo.png" alt="R&T" height="40"/>
+                        </a>
+
+                    </div>
+                    <div class="col-xl">
+                        <div class="copyright border-top text-center m-5 py-4">
+                            <p class="">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="btn-group-vertical my-4">
+                            <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://www.linkedin.com/in/adriencrico" target="_blank">linkedin</a>
+                            <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://github.com/dontbqn" target="_blank">github</a>
+                            <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="" target="_blank">twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

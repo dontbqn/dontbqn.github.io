@@ -25,15 +25,15 @@
                         <div id="navigation_bar" class="text-white">
                             <div class="nav nav-pills">
                                 <li class="nav-item"> <a class="nav-link link-light" href="page1.html">Accueil</a></li>
-                                <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
+                                <li class="nav-item"><a class="nav-link link-light" id="blason_page" href="page2.html">Mon Blason</a></li>
                             </div>
                             <div class="nav nav-pills">
-                                <li class="nav-item" scope="col"><a class="nav-link link-light" href="page3.html">Carrière</a></li>
+                                <li class="nav-item" scope="col"><a class="nav-link link-light" href="#" aria-current="page">Carrière</a></li>
                                 <li class="nav-item"><a class="nav-link link-light" href="page4.html">Timeline</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
                                     <ul class="dropdown-menu bg-dark">
-                                        <li><a class="dropdown-item link-light" href="#" aria-current="page">Carousel de la vie</a></li>
+                                        <li><a class="dropdown-item link-light" href="page5.html">Carousel de la vie</a></li>
                                         <li><a class="dropdown-item link-light" href="blog.html">Blog</a></li>
                                         <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
                                         <li><hr class="dropdown-divider bg-info"></li> <!-- Divider-->  
@@ -83,48 +83,106 @@
             <button type="button" id="byecow" class="btn btn-danger" title="yes">remove cow?</button>
             </figure>
         </div>
-
-        <!--------------------------------------------- Articles --------------------------------------------------->
-
-        <article class="container border shadow mb-5">
-            <h2 class="blog-post-title mb-1">Blog #1</h2>
-            <p class="blog-post-meta">November 26, 2022 by <a href="contacts.html">Adrien.C</a></p>
-    
-            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-            <hr>
-            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-            <h2>Blockquotes</h2>
-            <p>This is an example blockquote in action:</p>
-            <blockquote class="blockquote">
-              <p>Quoted text goes here.</p>
-            </blockquote>
-            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-            <h3>Example lists</h3>
-            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-            <ul>
-              <li>First list item</li>
-              <li>Second list item with a longer description</li>
-              <li>Third list item to close it out</li>
-            </ul>
-            <p>And this is an ordered list:</p>
-            <ol>
-              <li>First list item</li>
-              <li>Second list item with a longer description</li>
-              <li>Third list item to close it out</li>
-            </ol>
-            <p>And this is a definition list:</p>
-            <dl>
-              <dt>HyperText Markup Language (HTML)</dt>
-              <dd>The language used to describe and define the content of a Web page</dd>
-              <dt>Cascading Style Sheets (CSS)</dt>
-              <dd>Used to describe the appearance of Web content</dd>
-              <dt>JavaScript (JS)</dt>
-              <dd>The programming language used to build advanced Web sites and applications</dd>
-            </dl>
-            
+        <!---------------------------------------------Cards carrière--------------------------------------------------->
+        <!-------------------relations enreprise associations produits culturels appréciés--------------------------------------------------->
 
         
-        </article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"> <!--horizontal-->
+                    <div class="card mb-3" style="max-width: 600px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="img/IUT-de-Saint-Malo-logo.png" class="img-fluid rounded-start p-1" alt="RT-St-malo">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body text-dark m-2">
+                              <h5 class="card-title">Rentrée 2022</h5>
+                              <p class="card-text">IUT de Saint Malo / BUT Réseaux et Télécommunications</p>
+                              <p class="card-text"><small class="text-muted">Septembre 2022</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card border-danger border-2 mb-3" style="max-width: 19rem;">
+                        <div class="card-header text-danger d-inline bg-gradient"><h6 class="card-title">Don de Sang</h6><a href="https://dondesang.efs.sante.fr/"><img src="img/dongsvg.svg" class="w-100 float-end"/> </a></div>
+                        <div class="card-body text-danger">
+                          <p class="card-text">Enfin majeur, j'ai pu réalisé un don de sang pour la première fois lors d'une campagne au sein de l'IUT de Saint-Malo.</p>
+                        </div>
+                            <div class="badge bg-warning text-black-50 alert alert-dismissible fade show m-3" role="alert">New
+                                <button type="button" class="btn-close p-3" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-secondary text-dark border-5 bg-gradient">
+                        <img src="img/facade_rsi.jpg" class="card-img" alt="RégimeSocialDesIndépendants">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Stage de 3ème</h5>
+                          <p class="card-text d-inline bg-light bg-gradient text-dark badge border border-dark">Travail au sein d'une équipe de support informatique, assistance des utilisateurs</p>
+                          <br/>
+                          <p class="card-text badge text-black-50">2019</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!---- card / carousel : cordonbleu / cacolac / gâteau concorde --->
+
+        <script>
+            /*
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card bg-light text-black-50 border-5 bg-gradient w-50">
+                        <div id="carouselDark2" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="img/cacolacpack.jpeg" class="d-block w-100" style="height:250px; width:500px ;">
+                                    <div class="carousel-caption badge d-md-block">
+                                        <h5>Cacolac</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="img/cordonbleu1.jpg" class="d-block w-100" style="height:250px; width:500px ;">
+                                    <div class="carousel-caption badge d-md-block">
+                                        <h5>Cordon-bleu</h5>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="img/concorde_lenotre.jpeg" class="d-block w-100" style="height:250px; width:500px ;">
+                                    <div class="carousel-caption badge text-wrap d-md-block">
+                                        <h5>Concorde</h5>
+                                    </div>
+                                </div>                         
+                                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselDark2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                    </div> */
+                                </script>
+
 
         <!--------------------------------------------- Pied de page --------------------------------------------------->
         <footer class="footer px-5">
@@ -141,7 +199,7 @@
                     </div>
                     <div class="col-xl">
                         <div class="copyright border-top text-center m-5 py-4">
-                            <p class="">ⓒ2022 - developed and maintained by <a href="#" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+                            <p class="">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
                         </div>
                     </div>
                     <div class="col-sm-1">

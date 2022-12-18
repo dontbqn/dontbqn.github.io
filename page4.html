@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="fr">  
+    <head>
+        <title id="Title">Présentation sur Internet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="img/RT-stmalo-condense-950x347.ico">
+        <script src="./js/headerstate.js"> </script>
+        <script src="./js/onload_scripts.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+
+    <!-----------------------------------------------Principal----------------------------------------------->
+    <body class="bg-dark text-white bg-gradient">
+        <header id="header" class="py-4 mb-4 shadow-lg p-3 mb-5 rounded bg-primary bg-gradient sticky-top"> 
+           <div class="row align-items-end">
+                <div class="col-8 d-flex justify-content-end order-2">
+                    <div class="jumbotron mt-4 text-light" id="entete">
+                        <h1 class="display-4" id="prnm_nm">Adrien Crico</h1>
+                    </div>
+                </div>
+                <div class="col-4 order-1">
+                    <div class="collapse" id="navbarToggleCont">
+                        <div id="navigation_bar" class="text-white">
+                            <div class="nav nav-pills">
+                                <li class="nav-item"> <a class="nav-link link-light" href="page1.html" >Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
+                            </div>
+                            <div class="nav nav-pills">
+                                <li class="nav-item" scope="col"><a class="nav-link link-light" href="page3.html">Carrière</a></li>
+                                <li class="nav-item"><a class="nav-link link-light" href="" aria-current="page">Timeline</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        <li><a class="dropdown-item link-light" href="page5.html">Carousel de la vie</a></li>
+                                        <li><a class="dropdown-item link-light" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
+                                        <li><hr class="dropdown-divider bg-info"></li> <!-- Divider-->  
+                                    </ul>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                    <div class="input-group w-50 py-3 ">
+                        <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control input-text" id="searchbar" placeholder="search in my life.." aria-label="search in my life..">
+                        
+                        <div class="col-sm-1">
+                            <button id="btnNav" type="button" class="btn-block shadow-none navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleCont" aria-controls="navbarToggleCont">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
+                                  </svg><span class="visually-hidden">O</span>
+                            </button>
+                            <style> /*Pour permettre à l'utilisateur de cliquer au travers un svg*/
+                                svg {
+                                    pointer-events: none;
+                                    }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="visually-hidden" id="cow">
+            <figure>
+            <pre role="img" aria-label="ASCII COW" class="">
+              ___________________________
+        &lt; Cette fonctionnalité arrive bientôt. &gt;
+                ---------------------------
+                    \   ^__^
+                     \  (oo)\_______
+                        (__)\       )\/\
+                            ||----w |
+                            ||     ||
+            </pre>
+            <button type="button" id="byecow" class="btn btn-danger" title="yes">remove cow?</button>
+            </figure>
+        </div>
+<!--------------------------------------------- Timeline --------------------------------------------------->
+        
+        <!-------Range Bootstrap 5------>
+        <div class="jumbotron" id="cv_jumbo">
+            <h1 class="display-4 mx-2">Retour vers mon futur (frise chronologique)</h1>
+            <hr class="my-4">
+        </div>
+        
+        <div class="container mb-5">
+            <div class="row mb-3">
+                <div class="d-flex align-content-around flex-wrap">
+                    <label for="range" class="form-label display-6">Timeline <h6>Choose a category</h6></label>
+                        <input type="range" class="form-range bg-light rounded-pill px-1" max="3" id="myRange" value="0"/>
+                        
+                        <script>
+                            var r = document.getElementById('myRange');
+                            r.addEventListener('change', () => {
+                                if(r.valueAsNumber != 0){
+                                    document.getElementById("trueno").classList.add("visually-hidden");
+                                }
+                                if( r.valueAsNumber == 1 ){ // selon la valeur du range, une des 3 timeline s'affiche
+                                    document.getElementById("life").classList.add("visually-hidden");
+                                    document.getElementById("other").classList.add("visually-hidden");
+                                    document.getElementById("school").classList.remove("visually-hidden");
+
+                                }
+                                else if( r.valueAsNumber == 2 ){
+                                    document.getElementById("school").classList.add("visually-hidden");
+                                    document.getElementById("other").classList.add("visually-hidden");
+                                    document.getElementById("life").classList.remove("visually-hidden");
+                                }
+                                else if( r.valueAsNumber == 3 ){
+                                    document.getElementById("school").classList.add("visually-hidden");
+                                    document.getElementById("life").classList.add("visually-hidden");
+                                    document.getElementById("other").classList.remove("visually-hidden");
+                                }
+                                else{
+                                    document.getElementById("school").classList.add("visually-hidden");
+                                    document.getElementById("life").classList.add("visually-hidden");
+                                    document.getElementById("other").classList.add("visually-hidden");
+                                }
+                            })
+                        </script>
+                </div>
+
+            </div>
+            <div class="row m-2 border-start border-primary border-5 rounded-3 rounded-pill ">
+                <div class="col border-end border-primary me-2 border-2">
+                    <div class="card bg-dark shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-white-50">2007-2022</h5>
+                            <h3><span class="badge bg-success bg-gradient">School</span></h3> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-end border-primary me-1 border-2">
+                    <div class="card bg-dark shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-white-50">2004-2022</h5>
+                            <h3><span class="badge bg-primary bg-gradient">Life</span></h3> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col border-end border-primary border-2">
+                    <div class="card bg-dark shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-white-50">2004-20??</h5>
+                            <h3><span class="badge bg-secondary bg-gradient">Other Stuff</span></h3> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Next update : Vertical Timeline, emoticones for each event, popups cards appearing at a certain scrollY -->
+
+        <!--plusieurs timeline différentes ex: #school/#life/#autres selon la valeur du range-->
+        <div class="container bg-transparent rounded-3 mb-5 d-flex justify-content-center align-items-end">
+        <div class="container p-2 visually-hidden" id="school">
+            <div class="row justify-content-center m-5">
+                <!-- Emoticones associés -->
+                <div class="col-2 mx-3">
+                    <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                    <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#123559;</p>
+                    <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                </div>
+                <!-- Cards -->
+                <div class="col-6 border-4 rounded-start border-start mx-3">
+                    <div class="card border-success m-3" style="max-width: 45rem;">
+                        <div class="card-header text-black-50">2012</div>
+                        <div class="card-body text-success">
+                            <h6 class="card-title">Déménagement</h6>
+                            <p class="card-text text-dark">Mon popa</p>
+                        </div>
+                    </div>
+                    <div class="card border-success mx-3 my-5" style="max-width: 45rem;">
+                        <div class="card-header text-black-50">2012</div>
+                        <div class="card-body text-success">
+                            <h6 class="card-title">Déménagement</h6>
+                            <p class="card-text text-dark">Mon popa</p>
+                        </div>
+                    </div>
+                    <div class="card border-success m-3" style="max-width: 45rem;">
+                        <div class="card-header text-black-50">2012</div>
+                        <div class="card-body text-success">
+                            <h6 class="card-title">Déménagement</h6>
+                            <p class="card-text text-dark">Mon popa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container p-2 visually-hidden" id="life">
+                <div class="row justify-content-center m-5">
+                    <!-- Emoticones associés -->
+                    <div class="col-2 mx-3">
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#123559;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                    </div>
+                    <!-- Cards -->
+                    <div class="col-6 border-4 rounded-start border-start mx-3">
+                            <div class="card border-primary m-3" style="max-width: 45rem;">
+                                <div class="card-header text-black-50">2014</div>
+                                <div class="card-body text-primary">
+                                    <h6 class="card-title mb-2">Ma Première..</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 px-3">
+                                            <img src="img/cacolacpack.jpeg" alt="cacolac" style="height: 55px;">
+                                        </div>
+                                        <p class="card-text text-dark">Ma toute première cuite à base de cacolac / sirop pour la toux / rhum arrangé dans un squat à newyork</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-primary mx-3 my-5" style="max-width: 45rem;">
+                                <div class="card-header text-black-50">2014</div>
+                                <div class="card-body text-primary">
+                                    <h6 class="card-title mb-2">Ma Première..</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 px-3">
+                                            <img src="img/cacolacpack.jpeg" alt="cacolac" style="height: 55px;">
+                                        </div>
+                                        <p class="card-text text-dark">Ma toute première cuite à base de cacolac / sirop pour la toux / rhum arrangé dans un squat à newyork</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-primary m-3" style="max-width: 45rem;">
+                                <div class="card-header text-black-50">2014</div>
+                                <div class="card-body text-primary">
+                                    <h6 class="card-title mb-2">Ma Première..</h6>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 px-3">
+                                            <img src="img/cacolacpack.jpeg" alt="cacolac" style="height: 55px;">
+                                        </div>
+                                        <p class="card-text text-dark">Ma toute première cuite à base de cacolac / sirop pour la toux / rhum arrangé dans un squat à newyork</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="container p-2 visually-hidden" id="other">
+                <div class="row justify-content-center m-5">
+                    <!-- Emoticones associés -->
+                    <div class="col-2 mx-3">
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#128540;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#127881;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                    </div>
+                    <!-- Cards -->
+                    <div class="col-6 border-4 rounded-start border-start mx-3">
+                        <div class="card border-secondary border-2 m-3 shadow" style="max-width: 45rem;">
+                            <div class="card-header text-black-50">2012</div>
+                            <div class="card-body text-secondary">
+                                <h6 class="card-title">J'azj dzkj</h6>
+                                <p class="card-text text-dark">C'était un samedi soir.....</p>
+                            </div>
+                        </div>
+                        <div class="card border-2 border-secondary mx-3 my-5 shadow" style="max-width: 45rem;">
+                            <div class="card-header text-black-50">2010</div>
+                            <div class="card-body text-secondary">
+                                <h6 class="card-title mb-2">Ma Première..</h6>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 px-3">
+                                        <img src="img/concorde_lenotre.jpeg" alt="cacolac" style="height: 75px;">
+                                    </div>
+                                    <p class="card-text text-dark">Patisserie, un objectif, ce gateau a chaque fois qu'un anniversaire devait etre feter et que j'habitais encore à Conflant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4">
+            <!-- Mini Trueno AE86 d'Initial D, le role bouton pour faire apparaitre le curseur -->
+            <img id="trueno" class="position-relative" src="img/ae86truenototyota.png" role="button" style="height: 55px;">
+        </div>
+        
+
+        <script>
+            trueno.onclick = function() {
+              let start = Date.now(); // returns the number of milliseconds since January 1, 1970
+        
+              let timer = setInterval(function() {
+                let timePassed = Date.now() - start; //<
+        
+                trueno.style.left = timePassed / 5 + 'px';
+        
+                if (timePassed > 6000){
+                    document.getElementById("trueno").classList.add("visually-hidden");
+                    clearInterval(timer); // stop au bout de 6 secondes
+                }
+        
+              }, 10); // vitesse de 10ms
+            }
+          </script>
+
+
+        
+        <!-- card to begin with -->
+
+
+
+
+                <!--------------------------------------------- Pied de page --------------------------------------------------->
+                <footer class="footer px-5">
+                    <div class="row p-3 rounded bg-dark text-white">
+                        <div class="d-sm-flex justify-content-between">
+                            <div class="col-sm-1">
+                                <a href="https://iut-stmalo.univ-rennes1.fr/">
+                                    <img class="mt-4 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
+                                </a>
+                                <a href="https://iut-stmalo.univ-rennes1.fr/">
+                                    <img class="mt-5" src="img/RT-St-malo.png" alt="R&T" height="40"/>
+                                </a>
+        
+                            </div>
+                            <div class="col-xl">
+                                <div class="copyright border-top text-center m-5 py-4">
+                                    <p class="">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="btn-group-vertical my-4">
+                                    <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://www.linkedin.com/in/adriencrico" target="_blank">linkedin</a>
+                                    <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://github.com/dontbqn" target="_blank">github</a>
+                                    <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="" target="_blank">twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </body>
+</html>

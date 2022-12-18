@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="fr">  
-    <!DOCTYPE HTML>
-<html lang="fr">  
     <head>
         <title id="Title">Présentation sur Internet</title>
         <meta charset="UTF-8">
@@ -26,8 +24,8 @@
                     <div class="collapse" id="navbarToggleCont">
                         <div id="navigation_bar" class="text-white">
                             <div class="nav nav-pills">
-                                <li class="nav-item"> <a class="nav-link link-light" href="page1.html" >Accueil</a></li>
-                                <li class="nav-item"><a class="nav-link link-light"  href="#" aria-current="page">Mon Blason</a></li>
+                                <li class="nav-item"> <a class="nav-link link-light" href="page1.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
                             </div>
                             <div class="nav nav-pills">
                                 <li class="nav-item" scope="col"><a class="nav-link link-light" href="page3.html">Carrière</a></li>
@@ -35,9 +33,9 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
                                     <ul class="dropdown-menu bg-dark">
-                                        <li><a class="dropdown-item link-light" href="page5.html">Carousel de la vie</a></li>
+                                        <li><a class="dropdown-item link-light" href="page5.html" >Carousel de la vie</a></li>
                                         <li><a class="dropdown-item link-light" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
+                                        <li><a class="dropdown-item link-light" href="#" aria-current="page">Contact</a></li>
                                         <li><hr class="dropdown-divider bg-info"></li> <!-- Divider-->  
                                     </ul>
                                 </li>
@@ -85,49 +83,102 @@
             <button type="button" id="byecow" class="btn btn-danger" title="yes">remove cow?</button>
             </figure>
         </div>
-        
 
-        <div class="jumbotron" id="arm_of_pits">
-            <h1 class="display-4">Mon Blason</h1>
-            <hr class="my-4">
+    <!-----------------------------------------------Contacts----------------------------------------------->
+    <div class="jumbotron" id="contacttitle">
+        <h1 class="display-4 mx-3">Formulaire de Contact</h1>
+        <hr class="my-4">
+    </div>
+
+        <div class="container d-flex justify-content-center bg-dark bg-gradient rounded-3 shadow my-5">
+            <div class="py-3 col-5 my-5 p-4">
+                <!-- Bootstrap 5 starter form -->
+                <form id="form needs-validation">
+                    <div class="d-flex mb-3 ">
+                        <div class="form-floating col-sm-5">
+                            <select class="form-select" id="civilite">
+                                <option selected>Choix</option>
+                                <option value="M">Monsieur</option>
+                                <option value="Mme">Madame</option>
+                                <option value="O">Autre.</option>
+                            </select>
+                            <label class="text-muted" for="civilite">Votre civilité <span>(optionnel)</span></label>
+
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col-5 mb-3 form-floating text-muted flex-fill">
+                            <input class="form-control" id="name" type="text" placeholder="nom" required/>
+                            <label class="form-label" for="name">Nom</label>
+                        </div>
+                        <div class="mx-4 col-5 form-floating text-muted flex-fill">
+                            <input class="form-control" id="prenom" type="text" placeholder="prénom" required/>
+                            <label class="form-label" for="prenom">Prenom</label>
+                        </div>
+                    </div>
+                    <!-- Email address input -->
+                    <div class="col-7 mb-3 form-floating text-muted">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="addresse email" required/>
+                        <label class="form-label" for="emailAddress">Adresse Email</label>
+                    </div>
+
+                    <!-- Reason -->
+                    <div class="row mb-3">
+                        <div class="col-sm-5">
+                            <label class="form-label" for="raisonMsg">Objet</label>
+                            <select class="form-select form-select-sm col" id="raisonMsg" required>
+                                <option selected>Choix</option>
+                                <option value="1">option1</option>
+                                <option value="2">option2</option>
+                                <option value="3">option3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="mb-3 form-floating text-muted">
+                        
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea required>
+                        <label class="form-label" for="message">Message</label>
+                    </div>
+
+                    <!-- Form submit button -->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Envoyer</button>
+                    </div>
+
+                </form>
+                
+                <script> //add bootstrap 'is-invalid' class when form isn't valid
+                /*
+                    function fSubmit(event) {
+                        t.classList.add("is-invalid");
+                    }
+                    const form = document.getElementById('form');
+                    const t = document.querySelectorAll(".form-control");
+                    form.addEventListener('submit', fSubmit);
+                    */
+                </script>
+                
+            </div>
         </div>
 
-        <div id="main" class="">
-            <img class="justify-content-center" src="img/Sainte Vache Laitière.png"/>
-            <script>
-             
-            </script>
-        </div>
-        
-        
-                <!--------------------------------------------- OffCanva (Fenêtre de côté) --------------------------------------------------->
-
-
-
-        
-
-
-
-
-
-
-
-        <!--------------------------------------------- Pied de page --------------------------------------------------->
-        <footer class="footer px-5 pt-4">
-            <div class="row p-3 bg-dark text-white rounded-3">
+        <!-- Pied de page -->
+        <footer class="footer px-5">
+            <div class="row p-3 rounded bg-dark text-white">
                 <div class="d-sm-flex justify-content-between">
                     <div class="col-sm-1">
                         <a href="https://iut-stmalo.univ-rennes1.fr/">
-                            <img class="mt-3" src="img/RT-St-malo.png" alt="R&T" height="40"/>
+                            <img class="mt-4 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
                         </a>
                         <a href="https://iut-stmalo.univ-rennes1.fr/">
-                            <img class="mt-5 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
+                            <img class="mt-5" src="img/RT-St-malo.png" alt="R&T" height="40"/>
                         </a>
 
                     </div>
                     <div class="col-xl">
                         <div class="copyright border-top text-center m-5 py-4">
-                            <p class="text-white-50">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+                            <p class="">ⓒ2022 - developed and maintained by <a href="#" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
                         </div>
                     </div>
                     <div class="col-sm-1">
@@ -141,5 +192,4 @@
             </div>
         </footer>
     </body>
-    
 </html>
