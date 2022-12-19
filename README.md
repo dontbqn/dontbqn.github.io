@@ -9,3 +9,6 @@ Future updates :
   - javascript function to alert user when they try to navigate to a page when they're already in.
   - add searchbar feature 
   - add php program to extract content of the contact's form
+  - ensure that the mobile version is correctly designed => blason / timeline
+  - Tooltips on each elements of the coats of arms
+  - add modal on my cow's head
