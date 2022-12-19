@@ -87,73 +87,131 @@
     </div>
 
 
-
-
-
-<div id="carouselExampleDark" class="carousel carousel-dark slide w-50" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container" id="coatsofarms">
+      <!------------------------------------------------------ Map du blason / coordonnées points --------------------------------------------------------------------->
+      <map name="blason" id="blason">
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Ma devise"><area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55" title="Ma devise"></span>
+          <div><span class="position-absolute mx-5" data-bs-toggle="tooltip" data-bs-placement="left" title="Authenticité"><area role="button" data-bs-toggle="modal" data-bs-target="#premvalModal" shape="circle" coords="272,278,54" title="premiere_objectifvaleur"></span></div>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Défauts"><area role="button" data-bs-toggle="modal" data-bs-target="#defautModal" shape="circle" coords="367,373,54" title="defauts"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Points Forts"><area role="button" data-bs-toggle="modal" data-bs-target="#atoutsModal" shape="circle" coords="795,182,59" title="atoutsptsforts"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Couleurs"><area role="button" data-bs-toggle="modal" data-bs-target="#couleursModal" shape="rect" coords="426,613,686,685" title="colors"></span>     
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="2nd valeur : Optimisme"><area role="button" data-bs-toggle="modal" data-bs-target="#secvalModal" shape="rect" coords="450,391,708,443" title="sec_valeur"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Découverte"><area role="button" data-bs-toggle="modal" data-bs-target="#thdvalModal" shape="circle" coords="838,359,52" title="trois_valeur"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Références culturels"><area role="button" data-bs-toggle="modal" data-bs-target="#refsModal" shape="circle" coords="370,171,90" title="ref_culturels"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Obstacles"><area role="button" data-bs-toggle="modal" data-bs-target="#obstModal" shape="poly" coords="546,74,681,84,670,137,572,170,511,130" title="obstacles"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Evenements marquants"><area role="button" data-bs-toggle="modal" data-bs-target="#eventsModal" shape="rect" coords="554,180,706,366" title="event_marquants"></span>
+          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Bretagne"><area role="button" data-bs-toggle="modal" data-bs-target="#bzhModal" shape="poly" coords="415,265,510,278,507,350" title="breizh"></span>
+          <area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351" title="laurier_sauce" data-tooltip="tooltip" data-bs-placement="left">
+          <area role="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Laurier-Sauce" shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451" data-bs-toggle="modal" data-bs-target="#lauriersModal">
+        </map>
+        <img src="img/Sainte Vache Laitière.png" width="1300" height="720" usemap="#blason">
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="img/petanque.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+  <script> // Enable Tooltips everywhere (pass your mouse over elements)
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+  </script>
+  <!------------------------------------------------------ Modal pour chaque elements --------------------------------------------------------------------->
+
+  <div class="modal fade bg-transparent" id="lauriersModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+              <div class="modal-header bg-success">
+                  <h5 class="modal-title" id="lauriersModalLabel">"Branche de Laurier Sauce"</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Symbolise les barbecues avec mon père
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/sumo.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/rootme.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-       
-<div class="jumbotron" id="titleindex">
-  <h1 class="display-4 mx-2">Portfolio / Se présenter sur Internet SAE14</h1>
-  <hr class="my-4">
-</div>
+  <div class="modal fade bg-transparent" id="couleursModal" tabindex="-1" aria-labelledby="couleursModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+              <div class="modal-header bg-success">
+                  <h5 class="modal-title" id="couleursModalLabel">"Couleurs du Blason"</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="badge">&#129001;Sinople</div> / <div class="badge">&#x2B1C;Argent</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade bg-transparent" id="premvalModal" tabindex="-1" aria-labelledby="authenticiteLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+              <div class="modal-header bg-success">
+                  <h5 class="modal-title" id="authenticiteLabel">"Authenticité"</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Ma première valeur / Mon premier objectif à suivre
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade bg-transparent" id="secvalModal" tabindex="-1" aria-labelledby="optiModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+              <div class="modal-header bg-success">
+                  <h5 class="modal-title" id="optiModalLabel">"Optimisme"</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  L'un de mes objectifs principal est ma quête vers l'optimisme. Cette forte valeur entre en echo avec mon intérêt pour
+                  les différentes pratiques et philosophies d'Asie, tel que le bouddhisme zen.
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade bg-transparent" id="thdvalModal" tabindex="-1" aria-labelledby="decModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark">
+              <div class="modal-header bg-success">
+                  <h5 class="modal-title" id="decModalLabel">"Découverte"</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Un principe à l'origine de toute connaissance
+              </div>
+          </div>
+      </div>
+  </div>
 
-        <div class="container-fluid d-flex justify-content-center mb-5 bg-gradient bg-dark col-5 p-2">
+          <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas) --------------------------------------------------->
 
-          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-              <li class="breadcrumb-item active"><a class="link-light" href="#" aria-current="page">Accueil</a></li>
-              <li class="breadcrumb-item"> <a class="link-light" href="page1.html">CV</a></li>
-              <li class="breadcrumb-item"> <a class=" link-light" href="page2.html">Mon Blason</a></li>
-              <li class="breadcrumb-item"> <a class=" link-light" href="page3.html">Carrière</a></li>
-              <li class="breadcrumb-item"> <a class=" link-light" href="page4.html">Timeline</a></li>
-              <li class="breadcrumb-item dropdown dropend">
-                  <a class="dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
-                  <ul class="dropdown-menu breadcrumb-item dropdown-menu-dark text-start p-2 bg-gradient rounded-3 ">
-                      <li class="btn-item"><a class="link-light" href="page5.html">Carousel de la vie</a></li>
-                      <li class="btn-item"><a class="link-light" href="blog.html">Blog</a></li>
-                      <li class="btn-item"><a class="link-light" href="contacts.html">Contact</a></li>
-                  </ul>
-              </li>
-          </ol>
-          </nav>
-        </div>
+          <div class="container-fluid d-flex justify-content-center mt-4">
+              <button class="btn btn-success btn-outline-success text-dark btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideoffcanvas" aria-controls="sideoffcanvas">De quoi parle-t-on ?</button>
+          </div>
+          <div class="offcanvas offcanvas-bottom bg-success bg-gradient" data-bs-scroll="true" tabindex="-1" id="sideoffcanvas" aria-labelledby="sideoffcanvasLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="sideoffcanvasLabel">Mon Blason</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-dark bg-gradient">
+                  <h6>
+                      Présentation de soi :
+                  </h6>
+                  <p>
+                      Il a un origine mediévale. On le rencontrait sur les boucliers des chevaliers pour leur éviter de s'entretuer ou en core pour reconnaitre les dépouilles des combattants cat
+                      au Moyen-Age, les guerriers sont en armure donc difficilement identifiables. le blason est donc une sorte de "carte d'identité du chevalier".
+                  </p>
+                  <p>
+                      Ce blason me décrit, me raconte et fait sens à ma vie jusqu'à présent. Il est issu d'un exercice de réflexion et d'expression de soi.
+                  </p>
+                  <p class="font-monospace d-inline bg-dark">
+                      <a class="text-decoration-none link-success">Vous pouvez l'explorer en cliquant sur les différentes icônes pour découvrir leurs significations.</a>
+                  </p>
+              </div>
+          </div>
+  
+
+
+
+
 
 
 

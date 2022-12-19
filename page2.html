@@ -95,25 +95,31 @@
         <div class="container" id="coatsofarms">
             <!------------------------------------------------------ Map du blason / coordonnées points --------------------------------------------------------------------->
             <map name="blason" id="blason">
-                <area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55" title="Ma devise" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#premvalModal" shape="circle" coords="272,278,54" title="premiere_objectifvaleur" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#defautModal" shape="circle" coords="367,373,54" title="defauts" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#atoutsModal" shape="circle" coords="795,182,59" title="atoutsptsforts" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#couleursModal" shape="rect" coords="426,613,686,685" title="colors" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#secvalModal" shape="rect" coords="450,391,708,443" title="sec_valeur" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#thdvalModal" shape="circle" coords="838,359,52" title="trois_valeur" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#refsModal" shape="circle" coords="370,171,90" title="ref_culturels" >
-                <area role="button" data-bs-toggle="modal" data-bs-target="#obstModal" shape="poly" coords="546,74,681,84,670,137,572,170,511,130" title="obstacles">
-                <area role="button" data-bs-toggle="modal" data-bs-target="#eventsModal" shape="rect" coords="554,180,706,366" title="event_marquants">
-                <area role="button" data-bs-toggle="modal" data-bs-target="#bzhModal" shape="poly" coords="415,265,510,278,507,350" title="breizh">
-                <area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351" title="laurier_sauce">
-                <area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451" title="laurier2">
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Ma devise"><area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55"><a></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="1er valeur : Authenticité"><area role="button" data-bs-toggle="modal" data-bs-target="#premvalModal" shape="circle" coords="272,278,54"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Défauts"><area role="button" data-bs-toggle="modal" data-bs-target="#defautModal" shape="circle" coords="367,373,54"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Points Forts"><area role="button" data-bs-toggle="modal" data-bs-target="#atoutsModal" shape="circle" coords="795,182,59"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Couleurs"><area role="button" data-bs-toggle="modal" data-bs-target="#couleursModal" shape="rect" coords="426,613,686,685"></a>     
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="2nd valeur : Optimisme"><area role="button" data-bs-toggle="modal" data-bs-target="#secvalModal" shape="rect" coords="450,391,708,443"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="3eme valeur : Découverte"><area role="button" data-bs-toggle="modal" data-bs-target="#thdvalModal" shape="circle" coords="838,359,52"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Références culturels"><area role="button" data-bs-toggle="modal" data-bs-target="#refsModal" shape="circle" coords="370,171,90"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Obstacles"><area role="button" data-bs-toggle="modal" data-bs-target="#obstModal" shape="poly" coords="546,74,681,84,670,137,572,170,511,130"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Evenements marquants"><area role="button" data-bs-toggle="modal" data-bs-target="#eventsModal" shape="rect" coords="554,180,706,366"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Bretagne"><area role="button" data-bs-toggle="modal" data-bs-target="#bzhModal" shape="poly" coords="415,265,510,278,507,350"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Laurier-Sauce"><area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Laurier-Sauce"><area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451"></a>
               </map>
               <img src="img/Sainte Vache Laitière.png" width="1300" height="720" usemap="#blason">
         </div>
+        <script> // Enable Tooltips everywhere (pass your mouse over elements)
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
         <!------------------------------------------------------ Modal pour chaque elements --------------------------------------------------------------------->
 
-        <div class="modal fade bg-transparent" id="lauriersModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
+        <div class="modal fade bg-transparent" id="lauriersModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
                     <div class="modal-header bg-success">
@@ -134,7 +140,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="badge">&#129001;Sinople</div> / <div class="badge">&#x2B1C;Argent</div>
+                        <div class="badge">&#129001;Sinople</div> / <div class="badge">&#x2B1C;Argent</div> / <div class="badge">&#129003;Marron</div>
                     </div>
                 </div>
             </div>
@@ -179,6 +185,82 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade bg-transparent" id="defautModal" tabindex="-1" aria-labelledby="defModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="defModalLabel">"Mes Défauts"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="badge bg-info">logique</div> <div class="badge bg-warning">vocabulaire</div> <div class="badge bg-danger">coupes de cheveux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="atoutModalLabel">"Mes Points Forts"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="badge bg-secondary">adaptabilité </div> <div class="badge bg-info">saute haut </div> <div class="badge bg-success">gentillesse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="atoutModalLabel">"Bretagne"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="atoutModalLabel">"Événements marquants"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="atoutModalLabel">"Obstacles"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="atoutModalLabel">"Ma Devise"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <span class="font-monospace">niquel man</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
                 <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas) --------------------------------------------------->
 
