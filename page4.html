@@ -98,7 +98,7 @@
                     <label for="range" class="form-label display-6">Timeline <h6>Choose a category</h6></label>
                         <input type="range" class="form-range bg-light rounded-pill px-1" max="3" id="myRange" value="0"/>
                         
-                        <script>
+                        <script> // Gestion d'apparitions et disparitions des différentes Timelines
                             var r = document.getElementById('myRange');
                             r.addEventListener('change', () => {
                                 if(r.valueAsNumber != 0){
@@ -162,36 +162,43 @@
         <!--plusieurs timeline différentes ex: #school/#life/#autres selon la valeur du range-->
         <div class="container bg-transparent rounded-3 mb-5 d-flex justify-content-center align-items-end">
         <div class="container p-2 visually-hidden" id="school">
-            <div class="row justify-content-center m-5">
+            <div class="row justify-content-center">
                 <!-- Emoticones associés -->
-                <div class="col-2 mx-3">
-                    <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
-                    <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#123559;</p>
-                    <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">	&#x1F393;</p>
+                <div class="col-2 d-none d-sm-none d-md-block my-2 mx-3"> <!--Hidden on small pages-->
+                    <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F5FA;&#xFE0F;</p>
+                    <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F56F;&#xFE0F;</p>
+                    <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F393;</p>
                 </div>
                 <!-- Cards -->
                 <div class="col-6 border-4 rounded-start border-start mx-3">
                     <div class="card border-success m-3" style="max-width: 45rem;">
-                        <div class="card-header text-black-50">2012</div>
+                        <div class="card-header text-black-50">2016-2017-2018</div>
                         <div class="card-body text-success">
-                            <h6 class="card-title">Déménagement</h6>
-                            <p class="card-text text-dark">Mon popa</p>
+                            <h5 class="card-title">Voyages en Esapgne</h5>
+                            <p class="card-text text-dark">
+                                Lorsque j'étais collégien, je me suis rendu 3 fois sur le territoire espagnol. 
+                                Ces voyages marquent mes premières prises d'indépendance puisque nous étions lachés dans des villes inconnues chez des personnes
+                                avec qui il était difficile de communiquer. 
+                            </p>
                         </div>
                     </div>
                     <div class="card border-success mx-3 my-5" style="max-width: 45rem;">
-                        <div class="card-header text-black-50">2012</div>
+                        <div class="card-header text-black-50">2018</div>
                         <div class="card-body text-success">
-                            <h6 class="card-title">Déménagement</h6>
-                            <p class="card-text text-dark">Mon popa</p>
+                            <h5 class="card-title">Amnesty Internationale</h5>
+                            <p class="card-text text-dark">
+                                L'organisation d'Amnesty nous a suivi lors de la création d'une maquette en mémoire aux déportés de la 2nd Guerre Mondiale, 
+                                qui avait par la suite été exposée dans la Synagogue de Paris.
+                            </p>
                         </div>
                     </div>
                     <div class="card border-success m-3" style="max-width: 45rem;">
                         <div class="card-header text-black-50">2022</div>
                         <div class="card-body text-success">
-                            <h6 class="card-title">Obtention du Baccalauréat</h6>
+                            <h5 class="card-title">Obtention du Baccalauréat</h5>
                             <p class="card-text text-dark">
-                                Après des années de lycées difficiles, j'obtiens mon BAC avec mention 'Bien' après une agréable année durant laquelle
-                                je me suis fais de bons souvenirs.        
+                                Après des années de lycées mouvementées, j'obtiens mon diplôme avec mention "Bien", après une agréable année durant laquelle
+                                je me suis fais de très bons souvenirs.        
                             </p>
                         </div>
                     </div>
@@ -201,21 +208,20 @@
             <div class="container p-2 visually-hidden" id="life">
                 <div class="row justify-content-center m-5">
                     <!-- Emoticones associés -->
-                    <div class="col-2 mx-3">
+                    <div class="col-2 mx-3 d-none d-sm-none d-md-block"> <!--Hidden on small pages-->
                         <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#x1F30B;</p>
                         <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F3E1;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#127865;</p>
                     </div>
                     <!-- Cards -->
                     <div class="col-6 border-4 rounded-start border-start mx-3">
                             <div class="card border-primary m-3" style="max-width: 45rem;">
-                                <div class="card-header text-black-50">2012</div>
+                                <div class="card-header text-black-50">20</div>
                                 <div class="card-body text-primary">
-                                    <h6 class="card-title mb-2">21 / 12 / 2012</h6>
+                                    <h5 class="card-title mb-2">S</h5>
                                     <div class="d-flex align-items-center">
                                         <p class="card-text text-dark">
-                                            La peur de ma vie, je me demandais si j'allais mourir comme Michael Jackson et carousel-item
-                                            venait tout juste de sortir sa musique.
+                                            ss
                                         </p>
                                     </div>
                                 </div>
@@ -223,7 +229,7 @@
                             <div class="card border-primary mx-3 my-5" style="max-width: 45rem;">
                                 <div class="card-header text-black-50">2012</div>
                                 <div class="card-body text-primary">
-                                    <h6 class="card-title mb-2">Déménagement</h6>
+                                    <h5 class="card-title mb-2">Déménagement</h5>
                                     <div class="d-flex align-items-center">
                                         <p class="card-text text-dark">
                                             Notre famille est partie s'installer en Bretagne, mon père est forcé de rester sur Paris avant d'être muté à Rennes 2 ans après.
@@ -234,12 +240,12 @@
                             <div class="card border-primary m-3" style="max-width: 45rem;">
                                 <div class="card-header text-black-50">2014</div>
                                 <div class="card-body text-primary">
-                                    <h6 class="card-title mb-2">Ma Première..</h6>
+                                    <h5 class="card-title mb-2">Ma Première..</h5>
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 px-3">
                                             <img src="img/cacolacpack.jpeg" alt="cacolac" style="height: 55px;">
                                         </div>
-                                        <p class="card-text text-dark">Ma toute première cuite à base de cacolac / sirop pour la toux / rhum arrangé dans un squat à newyork</p>
+                                        <p class="card-text text-dark"></p>
                                     </div>
                                 </div>
                             </div>
@@ -250,29 +256,47 @@
             <div class="container p-2 visually-hidden" id="other">
                 <div class="row justify-content-center m-5">
                     <!-- Emoticones associés -->
-                    <div class="col-2 mx-3">
+                    <div class="col-2 mx-3 d-none d-sm-none d-md-block"> <!--Hidden on small pages-->
                         <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#128540;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#127881;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#123559;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#127856;</p>
+                        <p class="border-end border-2 border-dark rounded-pill p-2" style="font-size:90px">&#127926;</p>
                     </div>
                     <!-- Cards -->
                     <div class="col-6 border-4 rounded-start border-start mx-3">
                         <div class="card border-secondary border-2 m-3 shadow" style="max-width: 45rem;">
-                            <div class="card-header text-black-50">2012</div>
+                            <div class="card-header text-black-50">2014</div>
                             <div class="card-body text-secondary">
-                                <h6 class="card-title">J'azj dzkj</h6>
-                                <p class="card-text text-dark">C'était un samedi soir.....</p>
+                                <h5 class="card-title">J'azj dzkj</h5>
+                                <p class="card-text text-dark">C'était un samedi soir.......</p>
                             </div>
                         </div>
                         <div class="card border-2 border-secondary mx-3 my-5 shadow" style="max-width: 45rem;">
-                            <div class="card-header text-black-50">2010</div>
+                            <div class="card-header text-black-50">2009</div>
                             <div class="card-body text-secondary">
-                                <h6 class="card-title mb-2">Ma Première..</h6>
+                                <h5 class="card-title mb-2">le Concorde</h5>
                                 <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0 px-3">
-                                        <img src="img/concorde_lenotre.jpeg" alt="cacolac" style="height: 75px;">
+                                    <div class="flex-shrink-0 pe-3">
+                                        <img src="img/concorde_lenotre.jpeg" title="Concorde" height="90px" width="130px">
                                     </div>
-                                    <p class="card-text text-dark">Patisserie, un objectif, ce gateau a chaque fois qu'un anniversaire devait etre feter et que j'habitais encore à Conflant</p>
+                                    <p class="card-text text-dark">
+                                        Une recette de Le nôtre, célèbre patissier français.
+                                        Patisserie, un objectif, ce gateau a chaque fois qu'un anniversaire devait etre feter et que j'habitais encore à Conflant
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-secondary m-3" style="max-width: 45rem;">
+                            <div class="card-header text-black-50">2022</div>
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title mb-2">Mes premières expériences musicales</h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 pe-2">
+                                        <img src="img/victorhelenebasch.jpg" title="Victor&HélèneBasch" style="height: 60px;">
+                                    </div>
+                                    <p class="card-text text-dark">
+                                        J'ai assisté à mes premiers concerts et festivals cette année. Ainsi, j'ai pu continué à développer mes goûts musicaux et je suis allé
+                                        directement à la rencontre des artistes locaux de Rennes grâce à un projet de radio indépendante désormais terminé.
+                                    </p>
                                 </div>
                             </div>
                         </div>

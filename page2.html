@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> 
 <html lang="fr">  
     <!DOCTYPE HTML>
 <html lang="fr">  
@@ -93,37 +93,94 @@
             <hr class="my-4">
         </div>
         <div class="container" id="coatsofarms">
+            <!------------------------------------------------------ Map du blason / coordonnées points --------------------------------------------------------------------->
             <map name="blason" id="blason">
-                <area  shape="rect" coords="542,7,723,55" title="Ma devise" href="">
-                <area shape="circle" coords="272,278,54" title="prem_objectifvaleur" href="">
-                <area shape="circle" coords="367,373,54" title="defauts" href="">
-                <area shape="circle" coords="795,182,59" title="atoutsptsforts" href="">
-                <area shape="rect" coords="426,613,686,685" title="colors" href="">
-                <area shape="rect" coords="450,391,708,443" title="sec_valeur" href="">
-                <area shape="circle" coords="838,359,52" title="trois_valeur" href="">
-                <area shape="circle" coords="370,171,90" title="ref_culturels" href="">
-                <area shape="poly" coords="546,74,681,84,670,137,572,170,511,130" title="obstacles" href="">
-                <area shape="rect" coords="554,180,706,366" title="event_marquants" href="">
-                <area shape="poly" coords="415,265,510,278,507,350" title="breizh" href="">
-                <area shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351" title="laurier_sauce" href="">
-                <area shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451" title="laurier2">
+                <area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55" title="Ma devise" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#premvalModal" shape="circle" coords="272,278,54" title="premiere_objectifvaleur" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#defautModal" shape="circle" coords="367,373,54" title="defauts" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#atoutsModal" shape="circle" coords="795,182,59" title="atoutsptsforts" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#couleursModal" shape="rect" coords="426,613,686,685" title="colors" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#secvalModal" shape="rect" coords="450,391,708,443" title="sec_valeur" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#thdvalModal" shape="circle" coords="838,359,52" title="trois_valeur" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#refsModal" shape="circle" coords="370,171,90" title="ref_culturels" >
+                <area role="button" data-bs-toggle="modal" data-bs-target="#obstModal" shape="poly" coords="546,74,681,84,670,137,572,170,511,130" title="obstacles">
+                <area role="button" data-bs-toggle="modal" data-bs-target="#eventsModal" shape="rect" coords="554,180,706,366" title="event_marquants">
+                <area role="button" data-bs-toggle="modal" data-bs-target="#bzhModal" shape="poly" coords="415,265,510,278,507,350" title="breizh">
+                <area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351" title="laurier_sauce">
+                <area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451" title="laurier2">
               </map>
               <img src="img/Sainte Vache Laitière.png" width="1300" height="720" usemap="#blason">
         </div>
+        <!------------------------------------------------------ Modal pour chaque elements --------------------------------------------------------------------->
 
-        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Branche de Laurier Sauce" data-bs-content="Symbolise les barbecues avec mon père"></button>
-        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="" data-bs-content=""></button>
-        <a type="button" data-bs-toggle="popover" title="Branche de Laurier Sauce" data-bs-content="Symbolise les barbecues avec mon père"></a>
+        <div class="modal fade bg-transparent" id="lauriersModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="lauriersModalLabel">"Branche de Laurier Sauce"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Symbolise les barbecues avec mon père
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="couleursModal" tabindex="-1" aria-labelledby="couleursModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="couleursModalLabel">"Couleurs du Blason"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="badge">&#129001;Sinople</div> / <div class="badge">&#x2B1C;Argent</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="premvalModal" tabindex="-1" aria-labelledby="authenticiteLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="authenticiteLabel">"Authenticité"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Ma première valeur / Mon premier objectif à suivre
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="secvalModal" tabindex="-1" aria-labelledby="optiModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="optiModalLabel">"Optimisme"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        L'un de mes objectifs principal est ma quête vers l'optimisme. Cette forte valeur entre en echo avec mon intérêt pour
+                        les différentes pratiques et philosophies d'Asie, tel que le bouddhisme zen.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="thdvalModal" tabindex="-1" aria-labelledby="decModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="decModalLabel">"Découverte"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Un principe à l'origine de toute connaissance
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script>
-            //Enable bootstrap 5.0 popovers everywhere
-           var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-            })
-        </script>
-
-                <!--------------------------------------------- OffCanvas (Fenêtre de côté) --------------------------------------------------->
+                <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas) --------------------------------------------------->
 
                 <div class="container-fluid d-flex justify-content-center mt-4">
                     <button class="btn btn-success btn-outline-success text-dark btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideoffcanvas" aria-controls="sideoffcanvas">De quoi parle-t-on ?</button>
@@ -139,7 +196,7 @@
                         </h6>
                         <p>
                             Il a un origine mediévale. On le rencontrait sur les boucliers des chevaliers pour leur éviter de s'entretuer ou en core pour reconnaitre les dépouilles des combattants cat
-                            au Moyen-Age, les guerriers sont en armure donc difficilement identitifiables. le blason est donc une sorte de "carte d'identité du chevalier".
+                            au Moyen-Age, les guerriers sont en armure donc difficilement identifiables. le blason est donc une sorte de "carte d'identité du chevalier".
                         </p>
                         <p>
                             Ce blason me décrit, me raconte et fait sens à ma vie jusqu'à présent. Il est issu d'un exercice de réflexion et d'expression de soi.
