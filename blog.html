@@ -8,6 +8,7 @@
         <link rel="icon" href="img/RT-stmalo-condense-950x347.ico">
         <script src="./js/headerstate.js"> </script>
         <script src="./js/onload_scripts.js"> </script>
+        <script src="./js/closeToastblog.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
 
@@ -24,7 +25,8 @@
                     <div class="collapse" id="navbarToggleCont">
                         <div id="navigation_bar" class="text-white">
                             <div class="nav nav-pills">
-                                <li class="nav-item"> <a class="nav-link link-light" href="page1.html">Accueil</a></li>
+                                <li class="nav-item"> <a class="nav-link link-light" href="index.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link link-light"  href="page1.html">CV</a></li>
                                 <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
                             </div>
                             <div class="nav nav-pills">
@@ -32,7 +34,7 @@
                                 <li class="nav-item"><a class="nav-link link-light" href="page4.html">Timeline</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
-                                    <ul class="dropdown-menu bg-dark">
+                                    <ul class="dropdown-menu bg-dark bg-gradient">
                                         <li><a class="dropdown-item link-light" href="#" aria-current="page">Carousel de la vie</a></li>
                                         <li><a class="dropdown-item link-light" href="blog.html">Blog</a></li>
                                         <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
@@ -72,7 +74,7 @@
             <figure>
             <pre role="img" aria-label="ASCII COW" class="">
                 ___________________________
-            &lt; You can't count on that yet. &gt;
+         &lt; Cette fonctionnalité arrive bientôt. &gt;
                 ---------------------------
                     \   ^__^
                      \  (oo)\_______
@@ -119,13 +121,14 @@
               <li>pochoyy (moi) </li> 
             </ul>
             <p>De 9h à 18h, nous avons travaillé sans relâche.</p>
-            <p>L'organisation était parfaite, l'évenement bien encadré, avec de la nourriture et des goodies pour tout le monde (par exemple des stickers <a target="_blank" class="link-danger" href="https://www.yeswehack.com/fr/" class="">YesWeHack</a> <i>:o</i>) pour chaque membres de l'escouade.</p>
-            <p>Une liste des définitions et des liens de références pour votre documententation personnelle :</p>
+            <p>L'organisation était parfaite, l'évenement bien encadré, avec de la nourriture et des goodies pour tout le monde (par exemple des stickers <a target="_blank" class="link-danger" href="https://www.yeswehack.com/fr/" class="">YesWeHack</a> <i>:o</i>) pour chaque membre de l'escouade.</p>
+            <p><u>Une liste des définitions et des liens de références pour votre documententation personnelle :</u></p>
             
             <p>
                 Téléchargez <a class="link-info" href="#">ici</a> mon WriteUp sur l'un des challenges d'Obuscation Javascript présenté dans la liste de challenges. A noter que l'ensemble des défis sont à retrouver sur <a target="_blank" href="https://github.com/bWlrYQ">github</a>.
              </p>
-            <dl>
+             <!--HTML definition list starts and ends with dl element (i.e. <dl> and </dl>).-->
+            <dl class="d-grid gap-1">
               <dt>Capture The Flag (CTF)</dt>
               <dd>Un CTF est en général composé de plusieurs épreuves réparties dans différentes catégories et pour différents niveaux, du plus facile au plus difficile. Savoir dans quelle catégorie se trouve un challenge peut aider à l’appréhender.</dd>
               <dt>JavaScript (JS)</dt>
@@ -135,6 +138,7 @@
 
         <article class="container bg-dark border border-3 rounded-2 shadow my-5 p-3">
             <h2 class="blog-post-title mb-1">Blog #1</h2>
+            <img src="img/studioghibli.png" width="230px" height="150px" class="float-end mb-1 mx-5">
             <p class="blog-post-meta">November 21, 2022 by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
     
             <hr>
@@ -163,8 +167,8 @@
             </script>         
             <p>
                 I was tricked by a videogames / young culture magazine, they announced in a well-written article a theme
-                 park with rollecoasters and this picture on the left was linked (made from disneyland park schemes)<br/>
-                You can find the fan's drawing <a target="_blank" href="https://twitter.com/takumitoxin/status/561730029646659584" class="link-warning">there</a>.
+                 park with rollecoasters and this picture on the left was linked. (made from disneyland park schemes)<br/>
+                You can find the fan's original drawing <a target="_blank" href="https://discord.com/takumitoxin/status/561730029646659584" class="link-warning">there</a>.
             </p>
 
             <p>
@@ -175,13 +179,13 @@
                 Most of the films produced by Studio Ghibli were written and directed by Miyazaki. His son joined the company and already made its proof as a film director.
             </p>
             <p>
-                <em>First</em>, there was Topcraft, but the studio went bankrupt and dissolved on <i>June 15, 1985</i>, essentially splitting the studio in half. Hayao Miyazaki, Toshio Suzuki and Isao Takahata formed Studio Ghibli.
+                <em>First</em>, there was Topcraft, but the studio went bankrupt and dissolved on <i>June 15, 1985</i>, essentially splitting the studio in half. <strong>Hayao Miyazaki</strong>,<strong> Toshio Suzuki</strong> and <strong>Isao Takahata</strong> formed Studio Ghibli.
 
                 How many movies, etc : hand-drawn animation, recently releases a 3D animation using computer generated imagery (CGI) film. It provocked a lot of panic among fans but eventually I watched it and in my opinion they still made a great use of this new technology.
             </p>
             <p>
 
-                His last animation is nearly finished, even if this story-writer is well-known for announcing his retiring but still going on :
+                His last animation is nearly finished, even if this story-writer is well-known for announcing his retiring but still going on :<br/>
 
                 And the great pianist who made these awe inspiring music themes we all heard at least one time, either in an airport, or at highschool during every lunch breaks
 
@@ -208,9 +212,10 @@
                     <li>Howl's Moving Castle</li>
                 </ul>
 
-            <p>A list of definitions and reference links for your personal documentation :</p>
+            <p><u>A list of definitions and reference links for your personal documentation :</u></p>
             <p>Find here a great article : <a role="button" target="_blank" class="link-success">https://philstarlife.com/living/299567-japan-studio-ghibli-theme-park-opens</a>
             </p>
+             <!--HTML definition list starts and ends with dl element (i.e. <dl> and </dl>).-->
             <dl class="d-grid gap-1">
               <dt>Hayao Miyazaki, All-star artist-drawer<dt>
               <dd>
@@ -232,32 +237,42 @@
                     characters, scenes and special effects in films and television, which is described as "CGI animation"
                 </dd>
             </dl>
-            
-
         </article>
+        <div class="d-flex justify-content-end position-fixed bottom-0 end-0 mb-4 m-2" id="toaster">
+            <div class="toast show bg-light" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="img/philbert.ico" class="rounded me-2" width="27px" height="27px">
+                    <h5><strong class="me-auto badge text-dark text-wrap">Vous avez repéré une erreur ?</strong></h5>
+                </div>
+                <div class="toast-body text-dark lh-lg">
+                    Contactez-moi sur discord : <span class="d-inline link-danger">@dontbqn#5213</span>
+                </div>
+              </div>
+        </div>
+
         <!--------------------------------------------- Pied de page --------------------------------------------------->
-        <footer class="footer px-5">
-            <div class="row p-3 rounded bg-dark text-white">
+        <footer class="footer px-5 pt-4">
+            <div class="row p-3 bg-dark text-white rounded-3">
                 <div class="d-sm-flex justify-content-between">
                     <div class="col-sm-1">
                         <a href="https://iut-stmalo.univ-rennes1.fr/">
-                            <img class="mt-4 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
+                            <img class="mt-3" src="img/RT-St-malo.png" alt="R&T" height="40"/>
                         </a>
                         <a href="https://iut-stmalo.univ-rennes1.fr/">
-                            <img class="mt-5" src="img/RT-St-malo.png" alt="R&T" height="40"/>
+                            <img class="mt-5 mx-4 d-block" src="img/IUT-de-Saint-Malo-logo.png" alt="IUT-de-Saint-Malo-logo" width="50" height="43"/>
                         </a>
 
                     </div>
                     <div class="col-xl">
                         <div class="copyright border-top text-center m-5 py-4">
-                            <p class="">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
+                            <p class="text-white-50">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
                         </div>
                     </div>
                     <div class="col-sm-1">
                         <div class="btn-group-vertical my-4">
                             <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://www.linkedin.com/in/adriencrico" target="_blank">linkedin</a>
                             <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="https://github.com/dontbqn" target="_blank">github</a>
-                            <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="" target="_blank">twitter</a>
+                            <a role="button" class="btn btn-group-item btn-group-item-action btn-outline-danger" name="btn-rs" href="contacts.html" target="_blank">discord</a>
                         </div>
                     </div>
                 </div>
