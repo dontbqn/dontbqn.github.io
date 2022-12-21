@@ -109,7 +109,7 @@
                 <a data-bs-toggle="tooltip" data-bs-placement="left" title="Laurier-Sauce"><area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="1038,326,1120,453,1105,599,959,689,924,557,922,351"></a>
                 <a data-bs-toggle="tooltip" data-bs-placement="left" title="Laurier-Sauce"><area role="button" data-bs-toggle="modal" data-bs-target="#lauriersModal" shape="poly" coords="162,325,267,353,286,492,229,682,86,588,84,451"></a>
               </map>
-              <img src="img/Sainte Vache Laitière.png" width="1300" height="720" usemap="#blason">
+              <img src="img/Sainte Vache Laitière.png" width="1300" height="720" usemap="#blason"> <!--Image non-fluide car coordonnées précises => rendu mobile très mauvais-->
         </div>
         <script> // Enable Tooltips everywhere (pass your mouse over elements)
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -122,12 +122,13 @@
         <div class="modal fade bg-transparent" id="lauriersModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
-                    <div class="modal-header bg-success">
+                    <div class="modal-header bg-success ">
                         <h5 class="modal-title" id="lauriersModalLabel">"Branche de Laurier Sauce"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Symbolise les barbecues avec mon père
+                        Symbolise les barbecues avec mon père antillais, ses feuilles très parfumées s'utilisent tout au long de l'année en cuisine.<br/>
+                        Fraîches mais également séchées, elles peuvent être utilisées plusieurs mois après les avoir récoltées, car elles conservent leur saveur.
                     </div>
                 </div>
             </div>
@@ -152,8 +153,8 @@
                         <h5 class="modal-title" id="authenticiteLabel">"Authenticité"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        Ma première valeur / Mon premier objectif à suivre
+                    <div class="modal-body fs-5">
+                        Ma première valeur / Mon premier objectif à suivre.
                     </div>
                 </div>
             </div>
@@ -166,7 +167,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        L'un de mes objectifs principal est ma quête vers l'optimisme. Cette forte valeur entre en echo avec mon intérêt pour
+                        La quête vers l'optimisme. Cette forte valeur entre en echo avec mon intérêt pour
                         les différentes pratiques et philosophies d'Asie, tel que le bouddhisme zen.
                     </div>
                 </div>
@@ -179,8 +180,8 @@
                         <h5 class="modal-title" id="decModalLabel">"Découverte"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        Un principe à l'origine de toute connaissance
+                    <div class="modal-body fs-5">
+                        Une action à l'origine de tout.
                     </div>
                 </div>
             </div>
@@ -193,7 +194,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="badge bg-info">logique</div> <div class="badge bg-warning">vocabulaire</div> <div class="badge bg-danger">coupes de cheveux</div>
+                        <div class="badge rounded-pill bg-info">logique</div> que je développe (root-me, sudoku, mots fléchées).
+                         <div class="badge rounded-pill bg-warning">vocabulaire</div>, c'est pour cette raison que je lis de plus en plus.
+                          <div class="badge rounded-pill bg-danger">coupes de cheveux</div> ¯\_( ͡° ͜ʖ ͡°)_/¯
                     </div>
                 </div>
             </div>
@@ -206,12 +209,20 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="badge bg-secondary">adaptabilité </div> <div class="badge bg-info">saute haut </div> <div class="badge bg-success">gentillesse</div>
+                        <ul>
+                            <li><div class="badge rounded-pill bg-secondary">l'adaptabilité</div>
+                            <li>
+                                <div class="badge rounded-pill bg-info">saute haut</div> avec une potion verte issu du jeu <span class="link-success" title="Minecraft est un jeu de construction de type bac à sable, qui permet aux joueurs de créer leur propre monde avec des blocs, un peu comme des Lego ! Il peut être joué à la fois en jeu solo et en multijoueur">"Minecraft"</span>
+                                , rien d'extraordinaire.
+                                C'est une potion peu utilisée tant elle est inutile.
+                            </li>
+                            <li><div class="badge rounded-pill bg-success">la sympathie</div></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+        <div class="modal fade bg-transparent" id="bzhModal" tabindex="-1" aria-labelledby="bzhModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
                     <div class="modal-header bg-success">
@@ -219,43 +230,79 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        Même si je ne suis pas né dans cette région, c'est ici que j'ai vécu la plus grande partie de ma vie. Je suis convaincu
+                        que parmis les régions de la planète entière, la Bretagne a bien sa place en haut du classement. On trouve partout de beaux paysages
+                        mais c'est dans ces contrées nuageuses qu'ils rayonnent le plus.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+        <div class="modal fade bg-transparent" id="eventsModal" tabindex="-1" aria-labelledby="eventsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
                     <div class="modal-header bg-success">
-                        <h5 class="modal-title" id="atoutModalLabel">"Événements marquants"</h5>
+                        <h5 class="modal-title" id="eventsModalLabel">"Événements marquants"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <ul>
+                            <li>Mon enfance sur la "toile" de l'Internet.</li>
+                            <li>Mes rencontres au Lycée Victor Hélène Basch.</li>
+                            <li>Ma rentrée à Saint-Malo : nouveau départ, indépendance.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+        <div class="modal fade bg-transparent" id="obstModal" tabindex="-1" aria-labelledby="obstModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
                     <div class="modal-header bg-success">
-                        <h5 class="modal-title" id="atoutModalLabel">"Obstacles"</h5>
+                        <h5 class="modal-title" id="obstModalLabel">"Obstacles"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <ul>
+                            <li>Allérgie croisée au pollen.</li>
+                            <li>J'ai démarré la natation très tard.</li>
+                            <li>L'argent, un facteur déterminant de notre quotidien, Marx a tout dit.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bg-transparent" id="atoutsModal" tabindex="-1" aria-labelledby="atoutModalLabel" aria-hidden="true">
+        <div class="modal fade bg-transparent" id="deviseModal" tabindex="-1" aria-labelledby="deviseModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
                     <div class="modal-header bg-success">
-                        <h5 class="modal-title" id="atoutModalLabel">"Ma Devise"</h5>
+                        <h5 class="modal-title" id="deviseModalLabel">"Ma Devise"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                        <span class="font-monospace">niquel man</span>
+                       <p>
+                        Une devise qui peut sembler ironique, qui mélange français et anglais (tout comme ce site), mais qui 
+                        me rappelle qu'il faut toujours conserver le positif.
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-transparent" id="refsModal" tabindex="-1" aria-labelledby="refModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="refModalLabel">"Ma Devise"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <p>
+                        <ul>
+                            <li>Woodstock 1969, un festival historique</li>
+                            <li>Mon voisin Totoro, et plus briévement chaque oeuvre d'Hayao Miyazaki</li>
+                            <li>Cartouche R4 de la DS, une relique du passé</li>
+                        </ul>
+                       </p>
                     </div>
                 </div>
             </div>
@@ -263,10 +310,11 @@
 
 
                 <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas) --------------------------------------------------->
-
+                <hr class="d-flex justify-content-center container-fluid col-4">
                 <div class="container-fluid d-flex justify-content-center mt-4">
                     <button class="btn btn-success btn-outline-success text-dark btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideoffcanvas" aria-controls="sideoffcanvas">De quoi parle-t-on ?</button>
                 </div>
+                <hr class="my-4 col-4 container-fluid  d-flex justify-content-center">
                 <div class="offcanvas offcanvas-bottom bg-success bg-gradient" data-bs-scroll="true" tabindex="-1" id="sideoffcanvas" aria-labelledby="sideoffcanvasLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="sideoffcanvasLabel">Mon Blason</h5>

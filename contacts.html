@@ -92,11 +92,11 @@
         <hr class="my-4">
     </div>
 
-        <div class="container d-flex justify-content-center bg-dark bg-gradient rounded-3 shadow my-5">
+        <div class="container d-flex justify-content-center align-items-center bg-dark bg-gradient rounded-3 shadow my-5">
             <div class="py-3 col-5 my-5 p-4">
                 <!-- Bootstrap 5 starter form -->
                 <form id="form needs-validation">
-                    <div class="d-flex mb-3 ">
+                    <div class="d-flex mb-3">
                         <div class="form-floating col-sm-5">
                             <select class="form-select" id="civilite">
                                 <option selected>Choix</option>
@@ -104,24 +104,26 @@
                                 <option value="Mme">Madame</option>
                                 <option value="O">Autre.</option>
                             </select>
-                            <label class="text-muted" for="civilite">Votre civilité <span>(optionnel)</span></label>
+                            <label class="text-muted fs-6 d-none d-md-none d-lg-block" for="civilite">Votre civilité <span>(optionnel)</span></label>
 
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="col-5 mb-3 form-floating text-muted flex-fill">
-                            <input class="form-control" id="name" type="text" placeholder="nom" required/>
+                    <div class="d-flex g-2">
+                        <div class="mb-3 form-floating text-muted " style="min-width: 8em;">
+                            <input class="form-control" id="name" type="text" placeholder="nom" required/> 
                             <label class="form-label" for="name">Nom</label>
                         </div>
-                        <div class="mx-4 col-5 form-floating text-muted flex-fill">
+                        <div class="mx-4 form-floating text-muted" style="min-width: 8em;">
                             <input class="form-control" id="prenom" type="text" placeholder="prénom" required/>
                             <label class="form-label" for="prenom">Prenom</label>
                         </div>
                     </div>
                     <!-- Email address input -->
-                    <div class="col-7 mb-3 form-floating text-muted">
-                        <input class="form-control" id="emailAddress" type="email" placeholder="addresse email" required/>
-                        <label class="form-label" for="emailAddress">Adresse Email</label>
+                    <div class="d-flex">
+                        <div class="col-lg-7 col-sm-12 mb-3 form-floating text-muted" style="min-width: 12em;">
+                            <input class="form-control" id="emailAddress" type="email" placeholder="addresse email" required/>
+                            <label class="form-label" for="emailAddress">Adresse Email</label>
+                        </div>
                     </div>
 
                     <!-- Reason -->
@@ -138,8 +140,7 @@
 
                     <!-- Message input -->
                     <div class="mb-3 form-floating text-muted">
-                        
-                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea required>
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;min-width: 13em;"></textarea required>
                         <label class="form-label" for="message">Message</label>
                     </div>
 
@@ -150,7 +151,7 @@
 
                 </form>
                 
-                <script> //add bootstrap 'is-invalid' class when form isn't valid
+                <script> // add bootstrap 'is-invalid' class when form isn't valid
                 /*
                     function fSubmit(event) {
                         t.classList.add("is-invalid");

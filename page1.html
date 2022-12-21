@@ -94,16 +94,16 @@
         <div class="container border border-dark rounded-3">
             <div class="row bg-dark p-1">
                 <!-- Diplomes / Education avec pagination-->
-                <div class="col-lg-5 ms-5 m-4">
+                <div class="col-lg-6 ms-1 m-4">
                         <h2 class="text-center">Diplômes / Education</h2>    
                         <hr class="m-3"> <!-- Divider-->       
                         <div role="tabpanel">
                             <div class="list-group" id="myList" role="tablist">
-                              <a class="list-group-item list-group-item-action btn-outline-light d-inline bg-gradient" data-bs-toggle="list" href="#lycee" role="tab">2019 - 2022</a>
+                              <a class="list-group-item list-group-item-action btn-outline-light d-inline bg-gradient active" data-bs-toggle="list" href="#lycee" role="tab">2019 - 2022</a>
                               <a class="list-group-item list-group-item-action btn-outline-light d-inline bg-gradient" data-bs-toggle="list" href="#aujd" role="tab">Aujourd'hui</a>
                             </div>
                             <div class="tab-content text-center mt-3">
-                                <div class="tab-pane fade" id="lycee" role="tabpanel">
+                                <div class="tab-pane fade show active" id="lycee" role="tabpanel">
                                     Lycée Victor Hélène Basch <br/>
                                     Obtention du Baccalauréat avec mention Bien
                                     <ul class="list-unstyled pt-1">
@@ -112,15 +112,15 @@
                                     </ul>
                                 </div>
                                 <div class="tab-pane fade" id="aujd" role="tabpanel">
-                                    Etudiant en BUT de Réseaux et Télécommunications à l'Institut Universitaire de Technologie
+                                    Etudiant en BUT dans de le domaine des Réseaux et Télécommunications, à l'Institut Universitaire de Technologie
                                     de Saint-Malo
                                 </div>
                             </div>
                         </div>
                 </div>
                 <!-- PP dans une card sur le côté droit -->
-                <div class="col-md-6 ms- m-3 d-flex justify-content-around">
-                        <div class="card bg-dark border border-1 border-end-0 border-start-0" style="width:300px;">
+                <div class="col-lg-5 m-3 d-flex justify-content-around">
+                        <div class="card bg-dark border border-1 border-end-0 border-start-0 ms-5" style="width:300px;">
                             <h3 class="card-header" id="bio_title">Bio</h3>
                                 <div class="card bg-dark border-3">
                                     <img src="img/pp2.jpg" class="img-fluid card-img-top"/>
@@ -199,20 +199,30 @@
                 <!------- Expérience tableau stylé ------->
                 <div class="col-md-5">
                     <h3 class="mx-2">Expériences</h3>
-                    <hr class="m-3"> <!-- Divider--> 
+                    <hr class="m-3"> <!-- Divider-->
+                     
                     <table class="table table-responsive table-hovered text-center table-bordered">
                         <tbody class="text-light">
                             <td class="table-active">
                                 <th>2019</th>
                             </td>                            
-                            <td class="">
+                            <td>
                                 Stage professionnel de 3ème <br/>
                                 Travail au sein d'une équipe de support informatique
                             </td>
-                            <td class="px-4 lh-sm">
-                                Organisme public (RSI) <br/>
-                                Assistance utilisateur <br/>
-                                Maintenance réseau
+                            <td class="px-4 lh-sm align-center">
+                                <btn class="badge btn text-dark btn-light col-9 text-wrap btn-sm" data-bs-toggle="collapse" href="#collapseTasks" role="button" aria-expanded="false" aria-controls="collapseTasks">
+                                    Tâches accomplies
+                                </btn>
+                                  <div class="collapse" id="collapseTasks">
+                                    <div class="card card-body bg-transparent">
+                                        <ul class="d-grid gap-2">
+                                            <li>Organisme public (RSI)</li>
+                                            <li>Assistance utilisateur</li>
+                                            <li>Maintenance réseau</li>
+                                        </ul>
+                                    </div>
+                                  </div>
                             </td>
                         </tbody>
                     </table>
@@ -288,7 +298,7 @@
                         <div class="col-8">
                             <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau B">Anglais</span>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
                             </div>
                                 <br/>
                                 <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau C">Espagnol</span>
@@ -336,7 +346,7 @@
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
                 </svg>
-                <a href="#" onclick="onDl()">Téléchargez-le au format pdf</a>
+                <a href="ressources/CV_Crico_Adrien.pdf" onclick="onDl()">Téléchargez-le au format pdf</a>
                 <!-- Loading pdf...-->
                 <script>
                     function onDl() {
