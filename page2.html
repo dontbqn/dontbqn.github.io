@@ -48,7 +48,7 @@
                     
                         
                     <div class="input-group w-50 py-3 ">
-                        <span class="input-group-text">
+                        <span class="input-group-text d-none d-sm-none d-md-block"> <!--Hidden on small pages-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
                                 <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
                               </svg>
@@ -117,12 +117,14 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
         </script>
+
+
         <!------------------------------------------------------ Modal pour chaque elements --------------------------------------------------------------------->
 
         <div class="modal fade bg-transparent" id="lauriersModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
-                    <div class="modal-header bg-success ">
+                    <div class="modal-header bg-success">
                         <h5 class="modal-title" id="lauriersModalLabel">"Branche de Laurier Sauce"</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -309,40 +311,68 @@
         </div>
 
 
-                <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas) --------------------------------------------------->
-                <hr class="d-flex justify-content-center container-fluid col-4">
-                <div class="container-fluid d-flex justify-content-center mt-4">
-                    <button class="btn btn-success btn-outline-success text-dark btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideoffcanvas" aria-controls="sideoffcanvas">De quoi parle-t-on ?</button>
+        <!--------------------------------------------- OffCanvas (Fenêtre complémentaire s'ouvrant en bas de page) --------------------------------------------------->
+        <hr class="d-flex justify-content-center container-fluid col-4">
+
+        <div class="container-fluid d-flex justify-content-center mt-4">
+             <!--Bouton apparaissant pour les grands écrans -->
+            <button class="btn btn-success btn-outline-success text-dark btn-lg d-none d-xl-block d-xxl-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideoffcanvas" aria-controls="sideoffcanvas">De quoi parle-t-on ?</button>
+            <!--Bouton apparaissant pour les petits écrans -->
+            <button class="btn btn-success btn-outline-success text-dark btn-lg d-block d-sm-block d-md-block d-xl-none d-xxl-none" type="button" id="mobileText">De quoi parle-t-on ?</button>
+        </div>
+
+        <hr class="my-4 col-4 container-fluid  d-flex justify-content-center">
+
+        <!----------- OffCanvas ---------->
+        <div class="offcanvas offcanvas-bottom bg-success bg-gradient" data-bs-scroll="true" tabindex="-1" id="sideoffcanvas" aria-labelledby="sideoffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sideoffcanvasLabel">Mon Blason</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark bg-gradient">
+                <h6>
+                    Présentation de soi :
+                </h6>
+                <p>
+                    Il a une origine mediévale. On le rencontrait sur les boucliers des chevaliers pour leur éviter de s'entretuer ou en core pour reconnaitre les dépouilles des combattants cat
+                    au Moyen-Age, les guerriers sont en armure donc difficilement identifiables. le blason est donc une sorte de "carte d'identité du chevalier".
+                </p>
+                <p>
+                    Ce blason me décrit, me raconte et fait sens à ma vie jusqu'à présent. Il est issu d'un exercice de réflexion et d'expression de soi.
+                </p>
+                <p class="font-monospace d-inline bg-dark">
+                    <a class="text-decoration-none link-success">Vous pouvez l'explorer en cliquant sur les différentes icônes pour découvrir leurs significations.</a>
+                </p>
+            </div>
+        </div>
+        <!----------- Affichage pour les petits écrans ---------->
+        <script>
+            mobileText.onclick = function() {
+                document.getElementById("card_mobile").classList.remove("visually-hidden");
+            }
+        </script>
+        <div class="d-flex justify-content-center m-3 visually-hidden" id="card_mobile">
+            <div class="card">
+                <div class="card-header text-dark">
+                  Présentation de soi :
                 </div>
-                <hr class="my-4 col-4 container-fluid  d-flex justify-content-center">
-                <div class="offcanvas offcanvas-bottom bg-success bg-gradient" data-bs-scroll="true" tabindex="-1" id="sideoffcanvas" aria-labelledby="sideoffcanvasLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="sideoffcanvasLabel">Mon Blason</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body bg-dark bg-gradient">
-                        <h6>
-                            Présentation de soi :
-                        </h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
                         <p>
-                            Il a un origine mediévale. On le rencontrait sur les boucliers des chevaliers pour leur éviter de s'entretuer ou en core pour reconnaitre les dépouilles des combattants cat
+                            Il a une origine mediévale. On le rencontrait sur les boucliers des chevaliers pour leur éviter de s'entretuer ou en core pour reconnaitre les dépouilles des combattants cat
                             au Moyen-Age, les guerriers sont en armure donc difficilement identifiables. le blason est donc une sorte de "carte d'identité du chevalier".
                         </p>
                         <p>
                             Ce blason me décrit, me raconte et fait sens à ma vie jusqu'à présent. Il est issu d'un exercice de réflexion et d'expression de soi.
                         </p>
                         <p class="font-monospace d-inline bg-dark">
-                            <a class="text-decoration-none link-success">Vous pouvez l'explorer en cliquant sur les différentes icônes pour découvrir leurs significations.</a>
+                            <a class="text-decoration-none link-success">Vous pouvez l'explorer en tapant sur les différentes taches de la vache. Une petite fenêtre explicative s'ouvrira.</a>
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+              </div>
+        </div>
         
-
-
-
-
-
-
 
         <!--------------------------------------------- Pied de page --------------------------------------------------->
         <footer class="footer px-5 pt-4">

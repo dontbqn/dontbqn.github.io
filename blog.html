@@ -47,7 +47,7 @@
                     
                         
                     <div class="input-group w-50 py-3 ">
-                        <span class="input-group-text">
+                        <span class="input-group-text d-none d-sm-none d-md-block"> <!--Hidden on small pages-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
                                 <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
                               </svg>
@@ -86,7 +86,7 @@
             </figure>
         </div>
 
-        <!--------------------------------------------- Articles --------------------------------------------------->
+        <!------------------------------------------------ Articles du blog ------------------------------------------------------------->
 
         <div class="jumbotron" id="Mon Skyblog">
             <h1 class="display-4 mx-3">Articles</h1>
@@ -105,9 +105,9 @@
               <p>En quoi cet évenement consiste-il ?</p>
             </blockquote>
             <p>
-                Ce jour très attendu et populaire invite les étudiants de l'IUT de Saint-Malo, ses professeurs, et les lycéens de la ville de Saint-Malo, à
+                Ce jour très attendu et populaire invite les étudiants de l'IUT de Saint-Malo, ses professeurs, et les lycéens de la ville de Saint-Malo, à se réunir pour 
                 résoudre des énigmes autour de la cybersécurité.
-                Ce CTF (Capture The Flag) est organisé par les étudiants de deuxième année de DUT Réseaux & Télécommunication de Saint-Malo.
+                Ce CTF (Capture The Flag) est organisé par les étudiants de deuxième année de BUT Réseaux & Télécommunication de Saint-Malo.
             </p>
             <h3>Une première</h3>
             <p>
@@ -120,20 +120,21 @@
               <li>MoLam</li>
               <li>pochoyy (moi) </li> 
             </ul>
-            <p>De 9h à 18h, nous avons travaillé sans relâche.</p>
-            <p>L'organisation était parfaite, l'évenement bien encadré, avec de la nourriture et des goodies pour tout le monde (par exemple des stickers <a target="_blank" class="link-danger" href="https://www.yeswehack.com/fr/" class="">YesWeHack</a> <i>:o</i>) pour chaque membre de l'escouade.</p>
-            <p><u>Une liste des définitions et des liens de références pour votre documententation personnelle :</u></p>
+            <p>De 9h à 18h, nous avons travaillé sans relâche sur nos PC personnels, sur lesquels étaient installés des machines virtuels KaliLinux.</p>
+            <p>L'organisation était parfaite, l'évenement bien encadré, avec de la nourriture et des goodies (par exemple, des stickers <a target="_blank" class="link-danger" href="https://www.yeswehack.com/fr/" class="">YesWeHack</a> <i>:o</i>) pour chaque membre de l'escouade.</p>
             
             <p>
                 Téléchargez <a class="link-info" href="#">ici</a> mon WriteUp sur l'un des challenges d'Obuscation Javascript présenté dans la liste de challenges. A noter que l'ensemble des défis sont à retrouver sur <a target="_blank" href="https://github.com/bWlrYQ">github</a>.
              </p>
-             <!--HTML definition list starts and ends with dl element (i.e. <dl> and </dl>).-->
+             <p><u>Une liste des définitions et des liens de références pour votre documententation personnelle :</u></p>
+             <!--HTML definition list starts and ends with <dl> element (i.e. <dl> and </dl>) -->
             <dl class="d-grid gap-1">
               <dt>Capture The Flag (CTF)</dt>
-              <dd>Un CTF est en général composé de plusieurs épreuves réparties dans différentes catégories et pour différents niveaux, du plus facile au plus difficile. Savoir dans quelle catégorie se trouve un challenge peut aider à l’appréhender.</dd>
+              <dd>Un CTF est en général composé de plusieurs épreuves réparties dans différentes catégories et pour différents niveaux, du plus facile au plus difficile. Savoir dans quelle catégorie se trouve un challenge peut aider à l'appréhender.</dd>
               <dt>JavaScript (JS)</dt>
               <dd>Un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les développeurs web.</dd>
             </dl>
+            <aside class="fst-italic fw-lighter">src : flagmalo.fr/editions</aside>
         </article>
 
         <article class="container bg-dark border border-3 rounded-2 shadow my-5 p-3">
@@ -150,9 +151,11 @@
             </blockquote>
             <h3>A world renowned Animation Studio from Japan</h3>
             <p>
-                Here I will be focused on Ghibli Studio art works, animated movie, not only in cooperation with the world famous artist Myiazaki. I’ve watched many times each of ~23movies as a child and I will keep this path, and love every one of them. except for Omohide poro poro which is a very boring movie.
+                Here I will be focused on Ghibli Studio art works, animated movie, not only in cooperation with the world famous artist Myiazaki.
+                 I've watched many times each of ~23movies as a child and I will keep this path, and love every one of them. except for Omohide poro poro which is a very boring movie.
                 <br/>
-                Actually, my presentation is well-timed because this month, the Ghibli Musuem & Theme Park is opening its doors in Japan. It’s a really exciting for every fans of Ghibli movies scattered all over the world. To make it more specific, this is equivalent to a DisneyLand but in Japan with Studio Ghibli works.
+                Actually, my presentation is well-timed because this month, the Ghibli Musuem & Theme Park is opening its doors in Japan.
+                 It's a really exciting for every fans of Ghibli movies scattered all over the world. To make it more specific, this is equivalent to a DisneyLand but in Japan with Studio Ghibli works.
             </p>  
             <img src="img/ghiblipark.jpg" class="img-fluid p-2 float-end" onmouseover="caGrandit(this)" onmouseout="retourNormal(this)" height="160px" width="220px" />
             <script>
@@ -172,24 +175,25 @@
             </p>
 
             <p>
-                What is Studio Ghibli ? I litterally compared it as a Disney equivalent made in Japan but that’s not it. These are both entirely unique entities : <br/>
-
-                Origin : before my research, I never thought about the producers, who were behind this tremendous work ? Without surprise I learned that Miyazaki was one of the founder.
+                What is Studio Ghibli ? I litterally compared it as a Disney equivalent made in Japan but that's not it. These are both entirely unique entities. <br/>
+                
+                <h6>Origin</h6>
+                Before my research, I never thought about the producers, who were behind this tremendous work ? Without surprise I learned that Miyazaki was one of the founder.
 
                 Most of the films produced by Studio Ghibli were written and directed by Miyazaki. His son joined the company and already made its proof as a film director.
             </p>
             <p>
-                <em>First</em>, there was Topcraft, but the studio went bankrupt and dissolved on <i>June 15, 1985</i>, essentially splitting the studio in half. <strong>Hayao Miyazaki</strong>,<strong> Toshio Suzuki</strong> and <strong>Isao Takahata</strong> formed Studio Ghibli.
+                First, there was Topcraft, but the studio went bankrupt and dissolved on <i>June 15, 1985</i>, essentially splitting the studio in half. <strong>Hayao Miyazaki</strong>,<strong> Toshio Suzuki</strong> and <strong>Isao Takahata</strong> formed Studio Ghibli.
 
                 How many movies, etc : hand-drawn animation, recently releases a 3D animation using computer generated imagery (CGI) film. It provocked a lot of panic among fans but eventually I watched it and in my opinion they still made a great use of this new technology.
             </p>
             <p>
 
-                His last animation is nearly finished, even if this story-writer is well-known for announcing his retiring but still going on :<br/>
+                Miyazaki's last animation is nearly finished, even if this story-writer is well-known for announcing his retiring, he's still going on and it's for our greatest pleasure.<br/>
 
-                And the great pianist who made these awe inspiring music themes we all heard at least one time, either in an airport, or at highschool during every lunch breaks
+                He remains accompanied by the great pianist who made these awe inspiring music themes we all heard at least one time, either in an airport, or at highschool during every lunch breaks :
 
-                <strong>Joe Hisaïshi</strong> followed Miyazaki in almost every movies he made, I guess. They have an alchemy, their works are very homogenic.
+                <strong>Joe Hisaïshi</strong>. I guess he followed Miyazaki in almost every movies he's done. They have an alchemy, their works are very homogenic and never leaves the public without comment.
             </p>
                 <div class="col-lg-6 card bg-dark bg-gradient border my-4 mx-auto">
                     <div class="card-header d-inline bg-gradient rounded-bottom">One song among every masterpieces he made :</div>
@@ -198,11 +202,11 @@
                        <blockquote> <em>Joe Hisaishi performing in Nantes - october 2022</em> </blockquote>
                     </div>
                 </div>
-                So, this Ghibli Museum is open since<em> 1st of November</em>, and I hope I will be able to travel to this country, even if it’s only one night, I don’t mind, I just want to see Totoro’s House Replica and buy the most merchandises I can. 
+                So, this Ghibli Museum is open since<em> 1st of November</em>, and I hope I will be able to travel to this country, even if it's only one night, I don't mind, I just want to see Totoro's House Replica and buy the most merchandises I can. 
 
-                Tickets to overseas visitors are not on sale now, and the release date will be announced on their website, and it's not bad because we had 1 week of vacations and the park is not over yet which means many areas are under-constuctions.
+                Tickets to overseas visitors are not on sale now, and the release date will be announced on their website, and it's not bad because we had only 1 week of vacation and the park is not over yet, which means many areas are under-constructions.
 
-                (The park's website warns visitors that "there are no big attractions or rides in <strong> Ghibli Park</strong>.")
+                (The park's <a href="https://ghibli-park.jp/en/" class="text-reset" title="International tickets will go on sale January 10th 2023 at 2 p.m. (Japan standard time)" target="_blank">website</a> warns visitors that "there are no big attractions or rides in <strong> Ghibli Park</strong>.")
             </p>
             <h4>Some Great Titles to begin with !</h4>
             <p>I don't have a favourite one, but this list groups some great ones if you are interested by this animation studio</p>
@@ -213,7 +217,7 @@
                 </ul>
 
             <p><u>A list of definitions and reference links for your personal documentation :</u></p>
-            <p>Find here a great article : <a role="button" target="_blank" class="link-success">https://philstarlife.com/living/299567-japan-studio-ghibli-theme-park-opens</a>
+            <p>Find here a great article : <a target="_blank" class="link-success" href="https://philstarlife.com/living/299567-japan-studio-ghibli-theme-park-opens">https://philstarlife.com/living/299567-japan-studio-ghibli-theme-park-opens</a>
             </p>
              <!--HTML definition list starts and ends with dl element (i.e. <dl> and </dl>).-->
             <dl class="d-grid gap-1">
@@ -236,9 +240,10 @@
                     although the term "CGI" is most commonly used to refer to the 3-D computer graphics used for creating 
                     characters, scenes and special effects in films and television, which is described as "CGI animation"
                 </dd>
+                <aside class="fst-italic fw-lighter">src : wikipedia.org</aside>
             </dl>
         </article>
-        <div class="d-flex justify-content-end position-fixed bottom-0 end-0 mb-4 m-2" id="toaster">
+        <div class="d-flex justify-content-end position-fixed bottom-0 end-0 mb-4 m-2 d-none d-sm-none d-md-block" id="toaster">  <!--Hidden on small pages-->
             <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <img src="img/philbert.ico" class="rounded me-2" width="27px" height="27px">

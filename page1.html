@@ -48,7 +48,7 @@
                     
                         
                     <div class="input-group w-50 py-3">
-                        <span class="input-group-text d-none d-sm-block">
+                        <span class="input-group-text d-none d-sm-none d-md-block"> <!--Hidden on small pages-->
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
                                 <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
                               </svg>
@@ -85,7 +85,9 @@
             <button type="button" id="byecow" class="btn btn-danger" title="yes">remove cow?</button>
             </figure>
         </div>
-        <!------------- Début CV --------------->
+
+        <!-------------------------------------------------- Début CV ------------------------------------------------------------->
+
         <div class="jumbotron" id="cv_jumbo">
             <h1 class="display-4 mx-2">Mon CV</h1>
             <hr class="my-4">
@@ -93,7 +95,7 @@
         
         <div class="container border border-dark rounded-3">
             <div class="row bg-dark p-1">
-                <!-- Diplomes / Education avec pagination-->
+                <!----- Diplomes / Education avec pagination ----->
                 <div class="col-lg-6 ms-1 m-4">
                         <h2 class="text-center">Diplômes / Education</h2>    
                         <hr class="m-3"> <!-- Divider-->       
@@ -118,7 +120,7 @@
                             </div>
                         </div>
                 </div>
-                <!-- PP dans une card sur le côté droit -->
+                <!---- Bio dans une card sur le côté droit ---->
                 <div class="col-lg-5 m-3 d-flex justify-content-around">
                         <div class="card bg-dark border border-1 border-end-0 border-start-0 ms-5" style="width:300px;">
                             <h3 class="card-header" id="bio_title">Bio</h3>
@@ -128,7 +130,7 @@
                                 <div class="card-body">
                                     <div class="card-text text-center">Étudiant de Première Année à l'Institut Universitaire de Technologie de Saint-Malo</div>
                                     <div class="text-center mt-3">
-                                        <!-- Contactez-moi -->
+                                        <!-- Lien vers Contactez-moi -->
                                         <a type="button" class="btn btn-dark btn-outline-danger position-relative" href="contacts.html">
                                             En Recherche d'Alternance
                                             <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -146,57 +148,57 @@
             <div class="row bg-dark pt-3 px-2 p-4">
                 <div class="col-lg-4">
                     <div class="accordion text-dark">
-                            <div class="accordion-item bg-dark">
-                                <h2 class="accordion-header" id="panelStill-headingOne">
-                                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseOne" aria-expanded="true" aria-controls="panelStill-collapseOne">
-                                    Date de naissance
-                                    </button>
-                                </h2>
-                                <div id="panelStill-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelStill-headingOne">
-                                    <div class="accordion-body bg-light rounded-pill">
-                                        <strong>19 novembre 2004</strong>
-                                    </div>
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="panelStill-headingOne">
+                                <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseOne" aria-expanded="true" aria-controls="panelStill-collapseOne">
+                                Date de naissance
+                                </button>
+                            </h2>
+                            <div id="panelStill-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelStill-headingOne">
+                                <div class="accordion-body bg-light rounded-pill">
+                                    <strong>19 novembre 2004</strong>
                                 </div>
                             </div>
-                            <div class="accordion-item bg-dark">
-                                <h2 class="accordion-header" id="panelStill-headingTwo">
-                                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseTwo" aria-expanded="false" aria-controls="panelStill-collapseTwo">
-                                    Adresse
-                                    </button>
-                                </h2>
-                                    <div id="panelStill-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelStill-headingTwo">
-                                        <div class="accordion-body bg-light rounded-pill">
-                                            <strong>56 Av. des Erables, Le Rheu, 35650</strong>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="accordion-item bg-dark">
-                                <h2 class="accordion-header" id="panelStill-headingThree">
-                                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseThree" aria-expanded="false" aria-controls="panelStill-collapseThree">
-                                    E-mail Professionnel
-                                    </button>
-                                </h2>
-                                    <div id="panelStill-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelStill-headingThree">
-                                        <div class="accordion-body bg-light rounded-pill">
-                                            <strong>adriencrico@gmail.com</strong>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="accordion-item bg-dark">
-                                    <h2 class="accordion-header" id="panelStill-headingFour">
-                                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseFour" aria-expanded="false" aria-controls="panelStill-collapseFour">
-                                        Téléphone
-                                    </button>
-                                    </h2>
-                                        <div id="panelStill-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelStill-headingFour">
-                                            <div class="accordion-body bg-light rounded-pill">
-                                                <strong>+33 6 62 24 43 64</strong>
-                                            </div>
-                                        </div>
-                            </div>
                         </div>
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="panelStill-headingTwo">
+                                <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseTwo" aria-expanded="false" aria-controls="panelStill-collapseTwo">
+                                Adresse
+                                </button>
+                            </h2>
+                                <div id="panelStill-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelStill-headingTwo">
+                                    <div class="accordion-body bg-light rounded-pill">
+                                        <strong>56 Av. des Erables, Le Rheu, 35650</strong>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="accordion-item bg-dark">
+                            <h2 class="accordion-header" id="panelStill-headingThree">
+                                <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseThree" aria-expanded="false" aria-controls="panelStill-collapseThree">
+                                E-mail Professionnel
+                                </button>
+                            </h2>
+                                <div id="panelStill-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelStill-headingThree">
+                                    <div class="accordion-body bg-light rounded-pill">
+                                        <strong>adriencrico@gmail.com</strong>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="panelStill-headingFour">
+                                <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelStill-collapseFour" aria-expanded="false" aria-controls="panelStill-collapseFour">
+                                    Téléphone
+                                </button>
+                                </h2>
+                                    <div id="panelStill-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelStill-headingFour">
+                                        <div class="accordion-body bg-light rounded-pill">
+                                            <strong>+33 6 62 24 43 64</strong>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
                 </div>
-                <!------- Expérience tableau stylé ------->
+                <!---------- Expérience tableau ---------->
                 <div class="col-md-5">
                     <h3 class="mx-2">Expériences</h3>
                     <hr class="m-3"> <!-- Divider-->
@@ -227,7 +229,7 @@
                         </tbody>
                     </table>
                 </div>
-                <!------------ Profils et Objectifs ----------->
+                <!-------------- Profils et Objectifs ------------->
                 <div class="col-md-3 p-3 my-2 text-center">
                     <div class="border border-2 rounded p-2 my-2">
                         <h2 class="rounded b-inline bg-primary bg-gradient p-3">Profil & Objectifs</h2>
@@ -243,7 +245,7 @@
         </div>
         
         <div class="container bg-dark border border-dark rounded-3">
-            <!---------------- Compétences ----------------->
+            <!------------------ Compétences ------------------->
             <div class="container pt-3">
                 <div class="row m-3">
                     <div class="col-md-6">
@@ -289,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Langues dynamique // Niveau de Langue-->
+            <!----- Langues dynamique // Niveau de Langue ----->
             <div class="container p-2">
                 <div class="row m-2">
                     <div class="col-sm-5 mb-4">
@@ -305,7 +307,7 @@
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
                                 </div>
-                            <script>//Bootstrap 5 script to add in order to obtain tooltips on "Anglais" and "Espagnol"
+                            <script>//Bootstrap 5 script to add in order to obtain tooltips when mouse over "Anglais" and "Espagnol".
                                 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
                                 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                                 return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -314,7 +316,7 @@
                         </div>
                     </div>
 
-                    <!-- Soft Skills -->
+                    <!------ Soft Skills ------>
                     <div class="col-sm-7">
                         <h3 class="mx-2">Soft Skills</h3>
                         <hr class="m-3"> <!-- Divider--> 
@@ -339,7 +341,7 @@
         </div>
 
 
-        <!-- Télécharger le CV au format PDF -->
+        <!----- Télécharger le CV au format PDF ------>
         <div class="container d-flex justify-content-center">
             <div id="dlBtn" class="alert alert-primary text-center p-4 m-3" role="alert">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
