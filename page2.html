@@ -95,7 +95,8 @@
         <div class="container" id="coatsofarms">
             <!------------------------------------------------------ Map du blason / coordonnées points --------------------------------------------------------------------->
             <map name="blason" id="blason">
-                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Ma devise"><area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55"><a></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Mon Blason"><area role="button" data-bs-toggle="modal" data-bs-target="#vacheModal" shape="rect" coords="1053,139,1186,235"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="left" title="Ma devise"><area role="button" data-bs-toggle="modal" data-bs-target="#deviseModal" shape="rect" coords="542,7,723,55"></a>
                 <a data-bs-toggle="tooltip" data-bs-placement="left" title="1er valeur : Authenticité"><area role="button" data-bs-toggle="modal" data-bs-target="#premvalModal" shape="circle" coords="272,278,54"></a>
                 <a data-bs-toggle="tooltip" data-bs-placement="left" title="Défauts"><area role="button" data-bs-toggle="modal" data-bs-target="#defautModal" shape="circle" coords="367,373,54"></a>
                 <a data-bs-toggle="tooltip" data-bs-placement="left" title="Points Forts"><area role="button" data-bs-toggle="modal" data-bs-target="#atoutsModal" shape="circle" coords="795,182,59"></a>
@@ -120,7 +121,21 @@
 
 
         <!------------------------------------------------------ Modal pour chaque elements --------------------------------------------------------------------->
-
+        <div class="modal fade bg-transparent" id="vacheModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vacheModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-success">
+                        <h5 class="modal-title" id="vacheModalLabel">"Mon Blason : une vache"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Je n'ai pas grandi dans la campagne mais lors de mes promenades chez mes grands-parents, je rencontrais souvent les vaches et moutons des agriculteurs, et parfois des cerfs en forêt.
+                        Ils habitent près du Mont Saint-Michel, donc on peut souvent l'apercevoir au loin et il apparait
+                        comme le château de DisneyLand.
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal fade bg-transparent" id="lauriersModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lauriersModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
