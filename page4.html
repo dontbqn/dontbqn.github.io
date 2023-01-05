@@ -87,7 +87,7 @@
         <!--------------------------------------------- Timeline --------------------------------------------------->
         
         <!-------Range Bootstrap 5------>
-        <div class="jumbotron" id="frise_jumbo">
+        <div class="jumbotron" id="timeline_jumbo">
             <h1 class="display-4 mx-2">Retour vers mon futur (frise chronologique)</h1>
             <hr class="my-4">
         </div>
@@ -97,36 +97,7 @@
                 <div class="d-flex align-content-around flex-wrap">
                     <label for="range" class="form-label display-6">Timeline <h6>Déplacez le curseur vers les différentes frises</h6></label>
                         <input type="range" class="form-range bg-light rounded-pill px-1" max="3" id="myRange" value="0"/>
-                        
-                        <script> // Gestion d'apparitions et disparitions des différentes Timeline
-                            var r = document.getElementById('myRange');
-                            r.addEventListener('change', () => {
-                                if(r.valueAsNumber != 0){
-                                    document.getElementById("trueno").classList.add("visually-hidden");
-                                }
-                                if( r.valueAsNumber == 1 ){ // selon la valeur du range, une des 3 timeline s'affiche
-                                    document.getElementById("life").classList.add("visually-hidden");
-                                    document.getElementById("other").classList.add("visually-hidden");
-                                    document.getElementById("school").classList.remove("visually-hidden");
-
-                                }
-                                else if( r.valueAsNumber == 2 ){
-                                    document.getElementById("school").classList.add("visually-hidden");
-                                    document.getElementById("other").classList.add("visually-hidden");
-                                    document.getElementById("life").classList.remove("visually-hidden");
-                                }
-                                else if( r.valueAsNumber == 3 ){
-                                    document.getElementById("school").classList.add("visually-hidden");
-                                    document.getElementById("life").classList.add("visually-hidden");
-                                    document.getElementById("other").classList.remove("visually-hidden");
-                                }
-                                else{
-                                    document.getElementById("school").classList.add("visually-hidden");
-                                    document.getElementById("life").classList.add("visually-hidden");
-                                    document.getElementById("other").classList.add("visually-hidden");
-                                }
-                            })
-                        </script>
+                                <script src="./js/range.js"> </script>
                 </div>
 
             </div>
@@ -157,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <!-- Next update : popups cards appearing at a certain scrollY -->
+        <!-- Next update : Timeline popups cards appearing at a certain scrollY -->
 
         <!--plusieurs timeline différentes ex: #school/#life/#autres selon la valeur du range-->
         <div class="container bg-transparent rounded-3 mb-5 d-flex justify-content-center align-items-end">
@@ -300,24 +271,11 @@
         </div>
         <div class="container mb-4">
             <!-- Mini Trueno AE86 d'Initial D, le role bouton pour faire apparaitre le curseur -->
-            <img id="trueno" class="position-relative" src="img/ae86truenototyota.png" role="button" style="height: 55px;">
+            <img id="trueno" class="position-relative d-none d-sm-none d-xl-block" src="img/ae86truenototyota.png" role="button" style="height: 55px;">
+            <script src="./js/little_car.js"> </script>
         </div>
         
-        <script>
-            trueno.onclick = function() {
-              let start = Date.now(); // returns the number of milliseconds since January 1, 1970
-        
-              let timer = setInterval(function() {
-                let timePassed = Date.now() - start; // pointeur de temps
-                trueno.style.left = timePassed / 5 + 'px';
-        
-                if (timePassed > 6000){
-                    document.getElementById("trueno").classList.add("visually-hidden");
-                    clearInterval(timer); // stop au bout de 6 secondes
-                }
-              }, 10); // vitesse de 10ms
-            }
-          </script>
+
 
                 <!--------------------------------------------- Pied de page --------------------------------------------------->
                 <footer class="footer px-5">

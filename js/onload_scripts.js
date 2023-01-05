@@ -1,4 +1,4 @@
-
+//acrico 2023
 
 window.onload = function() {NavbarAnimState(),loading(),NoSearch()};
 
@@ -65,12 +65,13 @@ function stoploading(){ // replace spinner by Adrien Crico's header 1
 */
 window.addEventListener("blur", () => {
     loading();
+    document.title = "Chargement..";
 });
 // when the user is back to the website
 window.addEventListener("focus", () => {
     stoploading();
+    document.title = "Présentation sur Internet";
 });
-
 
 
 //still no search..
