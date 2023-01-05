@@ -11,3 +11,4 @@ Future updates :
   - add php program to extract content of the contact's form
   - ensure that the mobile version is correctly designed and responsive => blason (event.clientX,event.clientY,posX,posY)
   - well presented tooltips on each elements of the coats of arms 
+  - timeline popups cards appearing at a certain scrollY
