@@ -55,6 +55,15 @@ function loading(){
     entete.addEventListener('mouseover', (event) => { // Mouse over the Header cancels loading spinner
         stoploading();
     });
+    
+    let start = Date.now(); // returns the number of milliseconds since January 1, 1970
+    setInterval(function() {
+    let timePassed = Date.now() - start; // time setter
+    if (timePassed > 2300){ 
+        stoploading();
+        clearInterval(timer); // stop the spinner after 2,3 seconds
+    }
+    }, 1); // 1ms speed
 }
 
 function stoploading(){ // replace spinner by Adrien Crico's header 1
