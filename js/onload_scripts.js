@@ -61,7 +61,6 @@ function loading(){
     let timePassed = Date.now() - start; // time setter
     if (timePassed > 2300){ 
         stoploading();
-        clearInterval(timer); // stop the spinner after 2,3 seconds
     }
     }, 1); // 1ms speed
 }
