@@ -52,8 +52,26 @@
                                 <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
                               </svg>
                         </span>
-                        <input type="search" class="form-control input-text" id="searchbar" placeholder="search in my life.." aria-label="search in my life.." style="min-width: 5.5em;">
-                        
+                        <input type="search" class="form-control input-text" id="searchbar" placeholder="search in my life.." aria-label="search in my life.." minlength="4" maxlength="16" style="min-width: 5.5em;">
+                        <script>
+                            searchbar.addEventListener("change", (event)=> {
+                                var searchtxt = document.getElementById('searchbar').value.toLowerCase();
+                                if((searchtxt != "")){
+                                    console.log("user searched : " + searchtxt);
+                                    var target = document.getElementById("form");
+	                                var list = target.getElementsByTagName('label');
+                                    for(var i=1; i < list.length; i++){
+                                        var text = list[i].innerHTML;
+                                        if(text.toLowerCase().indexOf(searchtxt) > -1){ //returns 0 or more if present
+                                            alert("présence de l'entrée recherché dans le label suivant : "+text);
+                                            document.getElementById(text.toLowerCase()).focus();
+                                        }
+                                            //var loc = "#"+text               => could have been another way to do it, by adding #id to page url
+                                            //document.location.href= loc;
+                                    }
+                                }
+                            });
+                        </script>
                         <div class="col-sm-1">
                             <button id="btnNav" type="button" class="btn-block shadow-none navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggleCont" aria-controls="navbarToggleCont">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
@@ -92,7 +110,6 @@
         <h1 class="display-4 mx-3">Formulaire de Contact <span class="fs-3">(en cours..)</span></h1>
         <hr class="my-4">
     </div>
-    <?php require 'index.php'; ?>
         <div class="container d-flex justify-content-center bg-dark bg-gradient rounded-3 shadow my-5">
             <div class="col-sm-5 my-5 p-3">
                 <!-- Contact Form -->
@@ -111,7 +128,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="mb-3 form-floating text-muted" style="min-width: 8em;">
-                            <input class="form-control" id="name" name="name" type="text" placeholder="nom" required/> 
+                            <input class="form-control" id="nom" name="nom" type="text" placeholder="nom" required/> 
                             <label class="form-label" for="name">Nom</label>
                         </div>
                         <div class="mx-4 form-floating text-muted" style="min-width: 8em;">
@@ -129,8 +146,8 @@
                     <!-- Reason -->
                     <div class="row mb-4">
                         <div class="col-sm-4">
-                            <label class="form-label" for="raisonMsg">Objet</label>
-                            <select class="form-select form-select-sm col" id="raisonMsg" name="raisonMsg" required>
+                            <label class="form-label" for="objet">Objet</label>
+                            <select class="form-select form-select-sm col" id="objet" name="objet" required>
                                 <option value="Pro" selected>Offre Professionnelle</option>
                                 <option value="Pub">Offre Publicitaire</option>
                                 <option value="Oth">Autre / Personnel</option>

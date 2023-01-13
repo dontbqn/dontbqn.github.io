@@ -90,12 +90,15 @@ function NoSearch(){
     });
 }
 function ShowMowCow() {
-    document.getElementById("cow").classList.remove("visually-hidden");
-    cowbtn = document.getElementById("byecow");
-    cowbtn.addEventListener("click", (event)=> {
-        ByeCow();
+    if(document.getElementById("cow").classList.contains("visually-hidden")){
+        document.getElementById("cow").classList.remove("visually-hidden");
+        cowbtn = document.getElementById("byecow");
+        cowbtn.addEventListener("click", (event)=> {
+            ByeCow();
     });
+    }
+    //else cow is already on page, no need to remove visually-hidden class
 }
 function ByeCow(){
-    document.getElementById("cow").innerHTML = "";
+    document.getElementById("cow").classList.add("visually-hidden");
 }
