@@ -10,7 +10,6 @@ Future updates :
   - ensure that the mobile version is correctly designed and responsive => blason (event.clientX,event.clientY,posX,posY)
   - well presented tooltips on each elements of the coats of arms 
   - timeline popups cards appearing at a certain scrollY
-  - onclick animation on YesWeHack link in Blog : https://xyezawr.itch.io/gif-free-pixel-effects-pack-5-blood-effects
 
 On going : 
   - make the website Dynamic => + php & sql
