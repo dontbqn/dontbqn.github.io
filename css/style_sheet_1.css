@@ -24,15 +24,12 @@
     border-radius: 30px;
     border: 1px ridge rgb(0, 0, 0);
   }
-
-
   body{
     background-color: var(--main-bg-color);
   }
   .wrapper{
     flex:1;
   }
-
   header{
     background: linear-gradient(to right, #d3cce3, #e9e4f0);
   }
@@ -53,12 +50,10 @@
   {
     border-radius: 0.3rem;
   }
-
   
   .logo{
     color: aliceblue;
     transition: transform 0.9s;
-
   }
   .logo1:hover {
     transform: scale(1.1) translate(-20%, -10%);

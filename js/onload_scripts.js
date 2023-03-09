@@ -11,6 +11,9 @@ function openToast(){
 }
 //NavigationBar Animation
 function navbarAnimState() {
+    if (document.documentElement.scrollTop < 150){
+        document.getElementById("header").style.visibility = "visible";
+    }
     BtnNav = document.getElementById("btnNav");
     BtnNav.addEventListener("mouseover", (e) => {
         NavigBarOver();

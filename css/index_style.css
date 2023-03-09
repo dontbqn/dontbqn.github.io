@@ -1,15 +1,84 @@
 
-.pagin{
-    background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.813), rgba(255, 192, 203, 0.787));
-    text-align: center;
-    height: 10%;
-    width: 28%;
-}
-.pagin:hover {
-  box-shadow: 0px 10px 10px -3px rgba(132, 128, 128, 0.5);
-  transition: all 2s cubic-bezier(.17,.67,.82,.78);
 
-}
+/* Source : LinearApp */
+/*  "effet de survol" */
+/* https://linear.app/features */
+
+
 .breadcrumb{
   padding-top: 3%;
+}
+
+/* Links in front so they can be clicked */
+.breadcrumb-item{
+  z-index: 100;
+}
+
+#pagin {
+  max-width: 916px;
+}
+
+#pagin:hover > .pagin::after {
+  opacity: 1;
+}
+
+.pagin {
+  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.293), rgba(255, 192, 203, 0.188));
+  text-align: center;
+  height: 10%;
+  width: 28%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagin:hover::before {
+  opacity: 1;
+}
+
+.pagin::before,
+.pagin::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.pagin::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.06),
+    transparent 30%
+  );
+  z-index: 3;
+}
+
+.pagin::after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.4),
+    transparent 20%
+  );
+  z-index: 1;
+}
+
+.pagin > .pagin-content {
+  background-color: linear-gradient(to bottom right, rgba(0, 0, 255, 0.293), rgba(255, 192, 203, 0.188));
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo{
+  color: linear-gradient(to bottom right, rgba(0, 0, 255, 0.293), rgba(255, 192, 203, 0.188));
+  transition: transform 0.9s;
 }

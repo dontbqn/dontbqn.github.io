@@ -19,7 +19,7 @@
         <div class="row align-items-center mb-2">
             <div class="col-8 d-flex justify-content-end order-2">
                 <div class="jumbotron" id="entete">
-                    <h1 class="display-4 text-dark" id="prnm_nm">Adrien Crico</h1>
+                    <h1 class="display-4 text-dark" id="prnm_nm"></h1>
                 </div>
             </div>
             <div class="col-4 order-1">
@@ -77,7 +77,7 @@
     </div>
     <!--------------------------------------------- Content --------------------------------------------------->
     <div class="wrapper">
-        <div class="pagin position-absolute start-50 top-50 translate-middle my-5 p-2 rounded-pill">
+        <div class="pagin position-absolute start-50 top-50 translate-middle my-5 p-2 rounded-pill" id="pagin">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center">
                 <li class="breadcrumb-item active" aria-current="page" ><a class="link-light text-decoration-none" href="#" >Accueil</a></li>
@@ -94,6 +94,19 @@
             </nav>
         </div>
     </div>
+    <!-- effet de survol doux (linearapp feature) -->
+    <script>
+        document.getElementById("pagin").onmousemove = e => {
+        for(const pagin of document.getElementsByClassName("pagin")) {
+            const rect = pagin.getBoundingClientRect(),
+                x = e.clientX - rect.left,
+                y = e.clientY - rect.top;
+
+            pagin.style.setProperty("--mouse-x", `${x}px`);
+            pagin.style.setProperty("--mouse-y", `${y}px`);
+        };
+        }
+    </script>
     
         <!--------------------------------------------- Pied de page --------------------------------------------------->
         <footer class="footer d-flex justify-content-center px-5 pt-4 fixed-bottom">
