@@ -28,3 +28,5 @@ r.addEventListener('change', () => {
         document.getElementById("other").classList.add("visually-hidden");
         }
     });
+
+    

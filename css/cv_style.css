@@ -1,5 +1,5 @@
 .list-group-item {
-background: black;
+    background: black;
     color: rgba(255, 255, 255, 0.412);
 }
 .list-group-item:hover {
