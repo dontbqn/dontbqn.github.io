@@ -1,10 +1,16 @@
 //acrico 2023
 
-window.onload = function() {NavbarAnimState(),loading(),NoSearch()};
+window.onload = function() {navbarAnimState(),loading(),noSearch(), openToast()};
 
-
+function openToast(){
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show())
+}
 //NavigationBar Animation
-function NavbarAnimState() {
+function navbarAnimState() {
     BtnNav = document.getElementById("btnNav");
     BtnNav.addEventListener("mouseover", (e) => {
         NavigBarOver();
@@ -46,8 +52,7 @@ function NavigBarOut() {
 
 //loading spinner when loading the window
 function loading(){
-    document.getElementById("prnm_nm").innerHTML = "<div class='float-end'><div class='spinner-border text-light' style='width:3rem; height: 3rem;' role='status'><span class='visually-hidden'></span></div></div>";
-
+    document.getElementById("prnm_nm").innerHTML = "<div class='float-end'><div class='spinner-border text-black-50' style='width:3rem; height: 3rem;' role='status'><span class='visually-hidden'></span></div></div>";
     document.addEventListener('wheel', (event) => { // scroll up/down cancels loading spinner
         stoploading();
     });
@@ -60,14 +65,13 @@ function loading(){
     setInterval(function() {
     let timePassed = Date.now() - start; // time setter
     if (timePassed > 2300){ 
-        stoploading();
-        clearInterval(timer); // stop the spinner after 2,3 seconds
+        stoploading(); // stop the spinner after 2,3 seconds
     }
     }, 1); // 1ms speed
 }
 
 function stoploading(){ // replace spinner by Adrien Crico's header 1
-    document.getElementById("entete").innerHTML = "<div class='jumbotron mt-4 text-light' id='entete'><h1 class='display-4' id='prnm_nm'>Adrien Crico</h1></div>";
+    document.getElementById("entete").innerHTML = "<div class='mt-4 text-dark' id='entete'><h1 class='text-dark display-4' id='prnm_nm'>Adrien Crico</h1></div>";
 }
 /*
     When the user switch to another application, loading function is called back
@@ -79,12 +83,12 @@ window.addEventListener("blur", () => {
 // when the user is back to the website
 window.addEventListener("focus", () => {
     stoploading();
-    document.title = "Présentation sur Internet";
+    document.title = "dontbqn";
 });
 
 
 //still no search..
-function NoSearch(){
+function noSearch(){
     sinput = document.getElementById("searchbar");
     sinput.addEventListener("change", (event)=> {
         ShowMowCow();
@@ -100,3 +104,5 @@ function ShowMowCow() {
 function ByeCow(){
     document.getElementById("cow").innerHTML = "";
 }
+
+

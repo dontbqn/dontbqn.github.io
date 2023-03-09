@@ -6,6 +6,5 @@ window.onscroll = function() {NavigState()};
         }
         else{
             document.getElementById("header").style.visibility = "visible";
-
         }
     }

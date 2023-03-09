@@ -26,16 +26,11 @@
                         <div id="navigation_bar" class="text-white">
                             <div class="nav nav-pills">
                                 <li class="nav-item"> <a class="nav-link link-light" href="index.html">Accueil</a></li>
-                                <li class="nav-item"><a class="nav-link link-light"  href="page1.html">CV</a></li>
-                                <li class="nav-item"><a class="nav-link link-light"  href="page2.html">Mon Blason</a></li>
-                            </div>
-                            <div class="nav nav-pills">
-                                <li class="nav-item" scope="col"><a class="nav-link link-light" href="page3.html">Carrière</a></li>
-                                <li class="nav-item"><a class="nav-link link-light" href="page4.html">Timeline</a></li>
+                                <li class="nav-item"><a class="nav-link link-light"  href="timeline.html">CV</a></li>
+                                <li class="nav-item"><a class="nav-link link-light" href="curriculumvitae.html">Timeline</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle link-light" data-bs-toggle="dropdown" href="#">Autres</a>
                                     <ul class="dropdown-menu bg-dark bg-gradient">
-                                        <li><a class="dropdown-item link-light" href="page5.html">Carousel de la vie</a></li>
                                         <li><a class="dropdown-item link-light" href="blog.html" aria-current="page">Blog</a></li>
                                         <li><a class="dropdown-item link-light" href="contacts.html">Contact</a></li>
                                         <li><hr class="dropdown-divider bg-info"></li> <!-- Divider-->  
@@ -89,11 +84,11 @@
         <!------------------------------------------------ Articles du blog ------------------------------------------------------------->
 
         <div class="jumbotron" id="skyblog_jumbo">
-            <h1 class="display-4 mx-3">Articles</h1>
+            <h1 class="display-5 mx-3">Articles</h1>
             <hr class="my-4">
         </div>
 
-        <article class="container bg-dark border border-4 rounded-3 shadow my-5 p-3">
+        <article class="container bg-dark border border-4 rounded-3 shadow my-5 p-4 col-lg-6">
             <h2 class="blog-post-title mb-1">Blog #2</h2>
             <img src="img/flagmalo.fr.ico" width="150px" height="150px" class="float-end mx-5">
             <p class="blog-post-meta">November 26, 2022 by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
@@ -137,9 +132,9 @@
             <aside class="fst-italic fw-lighter">src : flagmalo.fr/editions</aside>
         </article>
 
-        <article class="container bg-dark border border-3 rounded-2 shadow my-5 p-3">
+        <article class="container bg-dark border border-3 rounded-2 shadow my-5 p-4 col-lg-6">
             <h2 class="blog-post-title mb-1">Blog #1</h2>
-            <img src="img/studioghibli.png" width="230px" height="150px" class="float-end mb-1 mx-5">
+            <img src="img/studioghibli.png" width="220px" height="140px" class="float-end mb-1 mx-5">
             <p class="blog-post-meta">November 21, 2022 by <a href="contacts.html" class="badge rounded-pill bg-info text-dark">Adrien.C</a></p>
     
             <hr>
@@ -177,7 +172,7 @@
             <p>
                 What is Studio Ghibli ? I litterally compared it as a Disney equivalent made in Japan but that's not it. These are both entirely unique entities. <br/>
                 
-                <h6>Origin</h6>
+                <h6>Origin Story</h6>
                 Before my research, I never thought about the producers, who were behind this tremendous work ? Without surprise I learned that Miyazaki was one of the founder.
 
                 Most of the films produced by Studio Ghibli were written and directed by Miyazaki. His son joined the company and already made its proof as a film director.
@@ -198,7 +193,7 @@
                 <div class="col-lg-6 card bg-dark bg-gradient border my-4 mx-auto">
                     <div class="card-header d-inline bg-gradient rounded-bottom">One song among every masterpieces he made :</div>
                     <div class="card-body ratio ratio-16x9">
-                        <iframe src="https://www.youtube-nocookie.com/embed/hsbFHkK3s9o?controls=0&amp;start=31" title="Orchestre Joe Hisaishi Nantes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                        <iframe class="p-2" src="https://www.youtube-nocookie.com/embed/hsbFHkK3s9o?controls=0&amp;start=31" title="Orchestre Joe Hisaishi Nantes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
                     </div>
                     <blockquote class="mx-auto"> <em>Joe Hisaishi performing in Nantes - october 2022</em> </blockquote>
                 </div>
@@ -244,10 +239,11 @@
             </dl>
         </article>
         <div class="d-flex justify-content-end position-fixed bottom-0 end-0 mb-4 m-2 d-none d-sm-none d-md-block" id="toaster">  <!--Hidden on small pages-->
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <img src="img/philbert.ico" class="rounded me-2" width="27px" height="27px">
                     <h5><strong class="me-auto badge text-dark text-wrap">Vous avez repéré une erreur ?</strong></h5>
+                    <button type="button" class="btn-close ps-4" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
                 <div class="toast-body text-dark lh-lg">
                     Contactez-moi sur discord : <span class="d-inline link-danger">@dontbqn#5213</span>
