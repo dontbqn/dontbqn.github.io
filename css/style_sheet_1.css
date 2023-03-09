@@ -1,0 +1,67 @@
+:root{
+  --main-bg-color: rgba(0, 0, 0, 0.992) ;
+  --main-btn-color: linear-gradient(to bottom right, rgb(167, 82, 204), rgba(167, 192, 203, 0.787)) ;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255)red rgb(246, 246, 246);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+    border: 3px solid rgb(27, 27, 27);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 1px ridge rgb(0, 0, 0);
+  }
+
+
+  body{
+    background-color: var(--main-bg-color);
+  }
+  header{
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  }
+  .collapsing{
+    transition: all 0.5s ease-out;
+  }
+
+  .droppy a:active{
+    background: var(--main-btn-color);
+    color: white;
+  }
+  .droppy a:hover{
+    background: var(--main-btn-color);
+    color: darkblue;
+
+  }
+  .droppy a:hover /* Only for 2nd droppy */
+  {
+    border-radius: 0.3rem;
+  }
+
+  
+  .logo{
+    color: aliceblue;
+    transition: transform 0.9s;
+
+  }
+  .logo1:hover {
+    transform: scale(1.1) translate(-20%, -10%);
+  }
+  .logo2:hover {
+    transform: scale(1.1) translate(0%, -20%);
+  }
+  .logo3:hover {
+    transform: scale(1.1) translate(20%, -10%);
+  }
