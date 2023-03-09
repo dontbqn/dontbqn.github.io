@@ -29,6 +29,10 @@
   body{
     background-color: var(--main-bg-color);
   }
+  .wrapper{
+    flex:1;
+  }
+
   header{
     background: linear-gradient(to right, #d3cce3, #e9e4f0);
   }

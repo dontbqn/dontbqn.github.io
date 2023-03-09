@@ -30,9 +30,9 @@
                                 <li class="nav-item"> <a class="nav-link link-dark" href="index.html">Accueil</a></li>
                                 <li class="nav-item"><a class="nav-link link-dark"  href="" aria-current="page">CV</a></li>
                                 <li class="nav-item"><a class="nav-link link-dark" href="timeline.html">Timeline</a></li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown dropend">
                                     <a class="nav-link dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#">Autres</a>
-                                    <ul class="dropdown-menu bg-dark bg-gradient">
+                                    <ul class="droppy dropdown-menu bg-transparent rounded-bottom rounded-end rounded-start rounded-3">
                                         <li><a class="dropdown-item text-decoration-none" href="blog.html">Blog</a></li>
                                         <li><a class="dropdown-item text-decoration-none" href="contacts.html">Contact</a></li>
                                        
@@ -83,241 +83,242 @@
         </div>
 
         <!-------------------------------------------------- Début CV ------------------------------------------------------------->
-
-        <div class="jumbotron" id="cv_jumbo">
-            <h1 class="display-5 mx-2">Mon CV</h1>
-            <hr class="my-4">
-        </div>
-        
-        <div class="container p-4">
-            <div class="row border-white border mx-5 my-2 rounded-3 bg-transparent p-1 justify-content-center">
-                <!----- Diplomes / Education avec pagination ----->
-                <div class="col-md-4 ms-1 m-4">
-                        <!-------------- Profils et Objectifs ------------->
-                    <div class="p-3 my-2 text-center">
-                        <div class="border border-2 rounded p-2 my-2 overflow-auto">
-                            <h2 class="rounded bg-gradient p-3" style="font-size:2vw;">Profil & Objectifs</h2>
-                            <p class="text-center">Je suis un élève de 18 ans rigoureux
-                                et curieux. J'aime l'informatique et
-                                les sciences du numérique. Je
-                                souhaite m'orienter vers les
-                                professions dans ces domaines.
-                            </p>
-                        </div>
-                    </div>
-                    <h3 class="text-center my-2">Diplômes / Education</h3>    
-                    <hr class="my-1"> <!-- Divider-->       
-                    <div role="tabpanel">
-                        <div class="list-group text-dark p-1 border-light rounded-3" id="myList" role="tablist">
-                          <a class="list-group-item shadow-none d-inline active list-group-item-action list-group-item-dark bg-gradient" data-bs-toggle="list" href="#lycee" role="tab">2019 - 2022</a>
-                          <a class="list-group-item shadow-none d-inline list-group-item-action list-group-item-dark bg-gradient" data-bs-toggle="list" href="#aujd" role="tab">Aujourd'hui</a>
-                        </div>
-                        <div class="tab-content text-center mt-3">
-                            <div class="tab-pane fade show active" id="lycee" role="tabpanel">
-                                Lycée Victor Hélène Basch <br/>
-                                Obtention du Baccalauréat avec mention Bien
-                                <ul class="list-unstyled pt-1">
-                                    <li>1ère Spécialité : <i>Numérique et Sciences Informatiques</i></li>
-                                    <li>2ème Spécialité : <i>Mathématiques</i></li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="aujd" role="tabpanel">
-                                Etudiant en BUT Réseaux et Télécommunications (BAC+1)
-                                
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <!---- Bio dans une card sur le côté droit ---->
-                <div class="col-lg-5 m-3">
-                        <div class="card bg-transparent border border-1 border-end-0 border-start-0 ms-5" style="width:300px;">
-                            <h3 class="card-header" id="bio_title">Bio</h3>
-                                <div class="card bg-transparent border-3">
-                                    <img src="img/me.png" class="img-fluid card-img-top" title="Find my LinkedIn at the bottom &#8681;" role="button"/>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-text text-center">Étudiant de Première Année à l'Institut Universitaire de Technologie de Saint-Malo</div>
-                                    <div class="text-center mt-3">
-                                        <!-- Lien vers Contactez-moi -->
-                                        <a type="button" class="btn shadow-none btn-outline-danger position-relative" href="contacts.html" style="transition: all 1s ease-out;">
-                                            En Recherche d'Alternance
-                                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
+    <div class="wrapper">
+            <div class="jumbotron" id="cv_jumbo">
+                <h1 class="display-5 mx-2">Curriculum Vitae</h1>
+                <hr class="my-4">
             </div>
-        </div>
-
-        <!-- mail, anniv, telephone, adresse en Accordéon -->
-        <div class="container p-4">
-            <div class="row border-white border mx-5 rounded-3 bg-transparent px-2 p-4">
-                <div class="col-lg-4">
-                    <div class="text-dark">
-                        <div class="">
-                            <h2 class="text-white-50">
-                                Rennes
-                                </button>
-                            </h2>
-                        </div>
-                        <div class="">
-                            <h2 class="text-white-50">
-                                adriencrico@gmail.com
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <!---------- Expérience tableau ---------->
-                <div class="col-md-5">
-                    <h3 class="mx-2 mt-3">Expériences</h3>
-                    <hr class="m-3"> <!-- Divider-->
-                     
-                    <table class="table table-responsive table-hovered text-center table-bordered">
-                        <tbody class="text-light">
-                            <td class="table-active">
-                                <th>2019</th>
-                            </td>                            
-                            <td>
-                                Stage professionnel de 3ème <br/>
-                                Travail au sein d'une équipe de support informatique
-                            </td>
-                            <td class="px-4 lh-sm align-center">
-                                <btn class="badge btn text-dark btn-light text-wrap btn-sm w-100" data-bs-toggle="collapse" href="#collapseTasks" role="button" aria-expanded="false" aria-controls="collapseTasks">
-                                    Tâches accomplies
-                                </btn>
-                                  <div class="collapse" id="collapseTasks">
-                                    <div class="card card-body bg-transparent">
-                                        <ul class="d-grid gap-2">
-                                            <li>Organisme public (RSI)</li>
-                                            <li>Assistance utilisateur</li>
-                                            <li>Maintenance réseau</li>
-                                        </ul>
-                                    </div>
-                                  </div>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container p-4">
-            <!------------------ Compétences ------------------->
-                <div class="row border-white border mx-5 my-2 rounded-3 px-2 p-4">
-                    <div class="col-md-6">
-                        <h3 class="mx-2">Compétences</h3>
-                        <hr class="m-3"> <!-- Divider-->
-                            <h6>Numériques</h6>
-                            <ul>
-                                <li>Certification Pix</li>
-                                <li>Utilisation des logiciels
-                                (suites LibreOffice et Microsoft Office)</li>
-                                <li>Bootstrap <em>v5.0</em></li>
-                            </ul>
-                            <h6>Sociales</h6>
-                            <ul>
-                                <li>Respect des règles</li>
-                                <li>Gestion de projet (Radio indépendante au sein du lycée)</li>
-                                <li>Permis <em>en cours d'acquisition</em></li>
-                            </ul>
-                    </div> 
-                    <!--------------- Activiété Loisirs ---------------->
-                    <div class="col-md-6">
-                        <h3 class="mx-2">Activités / Loisirs</h3>
-                        <hr class="m-3"> <!-- Divider-->
-                        <div class="row">
-                            <div class="col-sm-6 p-1">
-                                <ul class="d-grid gap-1">
-                                <li>Natation en club</li>
-                                <li>Veille Informatique</li>
-                                <li>Callisthénie</li>
-                                <li>Sport & bien-être</li>
-                                <li>Tennis</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 p-1">
-                                <ul class="d-grid gap-1">
-                                <li>Cuisine</li>
-                                <li>Bricolage</li>
-                                <li>Montage amateur de photos / vidéos</li>
-                                <li>Formation autodidacte</li>
-                                <li>(Openclassrooms / MyMooc)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-            <!----- Langues dynamique // Niveau de Langue ----->
+            
             <div class="container p-4">
-                <div class="row border-white border mx-5 p-4 rounded-3">
-                    <div class="col-sm-5 mb-4">
-                        <h3 class="mx-2">Niveau de Langue</h3>
-                        <hr class="m-3"> <!-- Divider--> 
-                        <div class="col-8 ms-3">
-                            <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau B">Anglais</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                <div class="row border-white border mx-5 my-2 rounded-3 bg-transparent p-1 justify-content-center">
+                    <!----- Diplomes / Education avec pagination ----->
+                    <div class="col-md-4 ms-1 m-4">
+                            <!-------------- Profils et Objectifs ------------->
+                        <div class="p-3 my-2 text-center">
+                            <div class="border border-2 rounded p-2 my-2 overflow-auto">
+                                <h2 class="rounded bg-gradient p-3" style="font-size:2vw;">Profil & Objectifs</h2>
+                                <p class="text-center">Je suis un élève de 18 ans rigoureux
+                                    et curieux. J'aime l'informatique et
+                                    les sciences du numérique. Je
+                                    souhaite m'orienter vers les
+                                    professions dans ces domaines.
+                                </p>
                             </div>
-                                <br/>
-                                <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau C">Espagnol</span>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                        </div>
+                        <h3 class="text-center my-2">Diplômes / Education</h3>    
+                        <hr class="my-1"> <!-- Divider-->       
+                        <div role="tabpanel">
+                            <div class="list-group text-dark p-1 border-light rounded-3" id="myList" role="tablist">
+                            <a class="list-group-item shadow-none d-inline active list-group-item-action list-group-item-dark bg-gradient" data-bs-toggle="list" href="#lycee" role="tab">2019 - 2022</a>
+                            <a class="list-group-item shadow-none d-inline list-group-item-action list-group-item-dark bg-gradient" data-bs-toggle="list" href="#aujd" role="tab">Aujourd'hui</a>
+                            </div>
+                            <div class="tab-content text-center mt-3">
+                                <div class="tab-pane fade show active" id="lycee" role="tabpanel">
+                                    Lycée Victor Hélène Basch <br/>
+                                    Obtention du Baccalauréat avec mention Bien
+                                    <ul class="list-unstyled pt-1">
+                                        <li>1ère Spécialité : <i>Numérique et Sciences Informatiques</i></li>
+                                        <li>2ème Spécialité : <i>Mathématiques</i></li>
+                                    </ul>
                                 </div>
-                            <script>//Bootstrap 5 script to add in order to obtain tooltips when mouse over "Anglais" and "Espagnol".
-                                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-                                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                                return new bootstrap.Tooltip(tooltipTriggerEl)
-                                })
-                            </script>
+                                <div class="tab-pane fade" id="aujd" role="tabpanel">
+                                    Etudiant en BUT Réseaux et Télécommunications (BAC+1)
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!---- Bio dans une card sur le côté droit ---->
+                    <div class="col-lg-5 m-3">
+                            <div class="card bg-transparent border border-1 border-end-0 border-start-0 ms-5" style="width:300px;">
+                                <h3 class="card-header" id="bio_title">Bio</h3>
+                                    <div class="card bg-transparent border-3">
+                                        <img src="img/me.png" class="img-fluid card-img-top" title="Find my LinkedIn at the bottom &#8681;" role="button"/>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text text-center">Étudiant de Première Année à l'Institut Universitaire de Technologie de Saint-Malo</div>
+                                        <div class="text-center mt-3">
+                                            <!-- Lien vers Contactez-moi -->
+                                            <a type="button" class="btn shadow-none btn-outline-danger position-relative" href="contacts.html" style="transition: all 1s ease-out;">
+                                                En Recherche d'Alternance
+                                                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- mail, anniv, telephone, adresse en Accordéon -->
+            <div class="container p-4">
+                <div class="row border-white border mx-5 rounded-3 bg-transparent px-2 p-4">
+                    <div class="col-lg-4">
+                        <div class="text-dark">
+                            <div class="">
+                                <h2 class="text-white-50">
+                                    Rennes
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="">
+                                <h2 class="text-white-50">
+                                    adriencrico@gmail.com
+                                </h2>
+                            </div>
                         </div>
                     </div>
-
-                    <!------ Soft Skills ------>
-                    <div class="col-sm-7">
-                        <h3 class="mx-2">Soft Skills</h3>
-                        <hr class="m-3"> <!-- Divider--> 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <ul class="d-grid gap-3">
-                                    <li class="badge bg-warning">Communication</li>
-                                    <li class="badge bg-success">Gestion du temps</li>
-                                    <li class="badge bg-primary">Ouverture d'esprit</li>
+                    <!---------- Expérience tableau ---------->
+                    <div class="col-md-5">
+                        <h3 class="mx-2 mt-3">Expériences</h3>
+                        <hr class="m-3"> <!-- Divider-->
+                        
+                        <table class="table table-responsive table-hovered text-center table-bordered">
+                            <tbody class="text-light">
+                                <td class="table-active">
+                                    <th>2019</th>
+                                </td>                            
+                                <td>
+                                    Stage professionnel de 3ème <br/>
+                                    Travail au sein d'une équipe de support informatique
+                                </td>
+                                <td class="px-4 lh-sm align-center">
+                                    <btn class="badge btn text-dark btn-light text-wrap btn-sm w-100" data-bs-toggle="collapse" href="#collapseTasks" role="button" aria-expanded="false" aria-controls="collapseTasks">
+                                        Tâches accomplies
+                                    </btn>
+                                    <div class="collapse" id="collapseTasks">
+                                        <div class="card card-body bg-transparent">
+                                            <ul class="d-grid gap-2">
+                                                <li>Organisme public (RSI)</li>
+                                                <li>Assistance utilisateur</li>
+                                                <li>Maintenance réseau</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container p-4">
+                <!------------------ Compétences ------------------->
+                    <div class="row border-white border mx-5 my-2 rounded-3 px-2 p-4">
+                        <div class="col-md-6">
+                            <h3 class="mx-2">Compétences</h3>
+                            <hr class="m-3"> <!-- Divider-->
+                                <h6>Numériques</h6>
+                                <ul>
+                                    <li>Certification Pix</li>
+                                    <li>Utilisation des logiciels
+                                    (suites LibreOffice et Microsoft Office)</li>
+                                    <li>Bootstrap <em>v5.0</em></li>
                                 </ul>
+                                <h6>Sociales</h6>
+                                <ul>
+                                    <li>Respect des règles</li>
+                                    <li>Gestion de projet (Radio indépendante au sein du lycée)</li>
+                                    <li>Permis <em>en cours d'acquisition</em></li>
+                                </ul>
+                        </div> 
+                        <!--------------- Activiété Loisirs ---------------->
+                        <div class="col-md-6">
+                            <h3 class="mx-2">Activités / Loisirs</h3>
+                            <hr class="m-3"> <!-- Divider-->
+                            <div class="row">
+                                <div class="col-sm-6 p-1">
+                                    <ul class="d-grid gap-1">
+                                    <li>Natation en club</li>
+                                    <li>Veille Informatique</li>
+                                    <li>Callisthénie</li>
+                                    <li>Sport & bien-être</li>
+                                    <li>Tennis</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 p-1">
+                                    <ul class="d-grid gap-1">
+                                    <li>Cuisine</li>
+                                    <li>Bricolage</li>
+                                    <li>Montage amateur de photos / vidéos</li>
+                                    <li>Formation autodidacte</li>
+                                    <li>(Openclassrooms / MyMooc)</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-sm-3">
-                                <ul class="d-grid gap-3">
-                                    <li class="badge bg-info">Esprit critique</li>
-                                    <li class="badge bg-primary">Travail en équipe</li>
-                                </ul>
+                        </div>
+                    </div>
+            </div>
+                <!----- Langues dynamique // Niveau de Langue ----->
+                <div class="container p-4">
+                    <div class="row border-white border mx-5 p-4 rounded-3">
+                        <div class="col-sm-5 mb-4">
+                            <h3 class="mx-2">Niveau de Langue</h3>
+                            <hr class="m-3"> <!-- Divider--> 
+                            <div class="col-8 ms-3">
+                                <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau B">Anglais</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                </div>
+                                    <br/>
+                                    <span class="p-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Niveau C">Espagnol</span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+                                    </div>
+                                <script>//Bootstrap 5 script to add in order to obtain tooltips when mouse over "Anglais" and "Espagnol".
+                                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                                    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                                    })
+                                </script>
+                            </div>
+                        </div>
+
+                        <!------ Soft Skills ------>
+                        <div class="col-sm-7">
+                            <h3 class="mx-2">Soft Skills</h3>
+                            <hr class="m-3"> <!-- Divider--> 
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <ul class="d-grid gap-3">
+                                        <li class="badge bg-warning">Communication</li>
+                                        <li class="badge bg-success">Gestion du temps</li>
+                                        <li class="badge bg-primary">Ouverture d'esprit</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="d-grid gap-3">
+                                        <li class="badge bg-info">Esprit critique</li>
+                                        <li class="badge bg-primary">Travail en équipe</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <!----- Télécharger le CV au format PDF ------>
-        <div class="container d-flex justify-content-center p-2">
-            <div id="dlBtn" class="border-white border-4 m-5 alert alert-transparent text-center p-4 m-3" role="alert">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
-                </svg>
-                <a href="ressources/CV_Adrien_Crico.pdf" class="text-decoration-none" onclick="onDl()">Téléchargez-le au format pdf</a>
-                <!-- Loading pdf...-->
-                <script>
-                    function onDl() {
-                        document.getElementById("dlBtn").innerHTML = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden=''true'></span><span class='px-2'>Téléchargement en cours..</span>";
-                    }
-                </script>
+            <!----- Télécharger le CV au format PDF ------>
+            <div class="container d-flex justify-content-center p-2">
+                <div id="dlBtn" class="border-white border-4 m-5 alert alert-transparent text-center p-4 m-3" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                    </svg>
+                    <a href="ressources/CV_Adrien_Crico.pdf" class="text-decoration-none" onclick="onDl()">Téléchargez-le au format pdf</a>
+                    <!-- Loading pdf...-->
+                    <script>
+                        function onDl() {
+                            document.getElementById("dlBtn").innerHTML = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden=''true'></span><span class='px-2'>Téléchargement en cours..</span>";
+                        }
+                    </script>
+                </div>
             </div>
-        </div>
+        
 
 
         <!--------------------------------------------- Pied de page --------------------------------------------------->
@@ -334,7 +335,7 @@
 
                     </div>
                     <div class="col-xl">
-                        <div class="copyright border-top text-center m-5 py-4">
+                        <div class="copyright border-top text-center m-5 py-3">
                             <p class="text-white-50">ⓒ2022 - developed and maintained by <a href="contacts.html" class="badge rounded-pill bg-info text-light">Adrien.C</a></p>
                         </div>
                     </div>
