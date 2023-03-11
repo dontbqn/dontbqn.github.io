@@ -39,17 +39,14 @@
 
   .droppy a:active{
     background: var(--main-btn-color);
-    color: white;
+    color: rgb(250, 0, 0);
   }
   .droppy a:hover{
     background: var(--main-btn-color);
     color: darkblue;
 
   }
-  .droppy a:hover /* Only for 2nd droppy */
-  {
-    border-radius: 0.3rem;
-  }
+
   .logo{
     color: aliceblue;
     transition: transform 0.9s;

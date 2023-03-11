@@ -82,3 +82,42 @@
   color: linear-gradient(to bottom right, rgba(0, 0, 255, 0.293), rgba(255, 192, 203, 0.188));
   transition: transform 0.9s;
 }
+
+.pagin .droppy a:hover /* Only for 2nd droppy */
+{
+  border-radius: 0.3rem;
+}
+.dropdown-menu .link-light:focus{
+  background-color: rgba(37, 28, 41, 0.434);
+  border-radius: 0.3rem;
+}
+
+
+/*  Responsivness  */
+@media(max-width: 1000px) {
+  
+  #pagin {    
+    max-width: 1000px;
+    padding: 10px 0px;
+  }
+
+  .pagin {
+    width: calc(90% - 7px);
+  }
+}
+
+@media(max-width: 500px) {
+  .pagin {
+    height: 80px;
+    width: calc(100% - 7px);
+  }
+  #pagin .droppy{
+    background: red;
+  }
+}
+
+@media(max-width: 320px) {
+  .pagin {
+    width: calc(90% - 7px);
+  }
+}

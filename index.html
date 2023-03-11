@@ -16,7 +16,7 @@
 <!-----------------------------------------------Principal----------------------------------------------->
 <body>
     <header id="header" class="py-3 shadow-lg p-3 mb-4 rounded-bottom sticky-top">
-        <div class="row align-items-center mb-2">
+        <div class="row align-items-end mb-2">
             <div class="col-8 d-flex justify-content-end order-2">
                 <div class="jumbotron" id="entete">
                     <h1 class="display-4 text-dark" id="prnm_nm"></h1>
@@ -79,18 +79,20 @@
     <div class="wrapper">
         <div class="pagin position-absolute start-50 top-50 translate-middle my-5 p-2 rounded-pill" id="pagin">
             <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item active" aria-current="page" ><a class="link-light text-decoration-none" href="#" >Accueil</a></li>
-                <li class="breadcrumb-item"> <a class="link-light text-decoration-none" href="curriculumvitae.html">CV</a></li>
-                <li class="breadcrumb-item"> <a class=" link-light text-decoration-none" href="timeline.html">Timeline</a></li>
-                <li class="breadcrumb-item dropdown dropend">
-                    <a class="dropdown-toggle link-light text-decoration-none" data-bs-toggle="dropdown" href="#">Autres</a>
-                    <ul class="droppy dropdown-menu text-start p-1 bg-transparent border-light rounded-3">
-                        <li class="btn-item"><a class="dropdown-item link-light text-decoration-none" href="blog.html">Blog</a></li>
-                        <li class="btn-item"><a class="dropdown-item link-light text-decoration-none" href="contacts.html">Contact</a></li>
-                    </ul>
-                </li>
-            </ol>
+            <div class="row">
+                <ol class="col breadcrumb justify-content-center">
+                    <li class="breadcrumb-item active" aria-current="page" ><a class="link-light text-decoration-none" href="#" >Accueil</a></li>
+                    <li class="breadcrumb-item"> <a class="link-light text-decoration-none" href="curriculumvitae.html">CV</a></li>
+                    <li class="breadcrumb-item"> <a class=" link-light text-decoration-none" href="timeline.html">Timeline</a></li>
+                    <li class="breadcrumb-item dropdown dropend">
+                        <a class="dropdown-toggle link-light text-decoration-none" data-bs-toggle="dropdown" href="#">Autres</a>
+                        <ul class="droppy dropdown-menu text-start p-1 bg-transparent border-light rounded-3">
+                            <li class="btn-item"><a class="dropdown-item link-light text-decoration-none" href="blog.html">Blog</a></li>
+                            <li class="btn-item"><a class="dropdown-item link-light text-decoration-none" href="contacts.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
             </nav>
         </div>
     </div>
