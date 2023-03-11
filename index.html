@@ -94,6 +94,7 @@
                             <li class="btn-item"><a class="dropdown-item link-light text-decoration-none" href="contacts.html">Contact</a></li>
                         </ul>
                         <script>
+                            // So that it doesn't display over the pagination in smartphones/small screens.
                             if (window.innerWidth < 1000) {
                                 document.getElementById("mini_dropdown").classList.remove("dropend");
                             }
@@ -106,12 +107,12 @@
     </div>
     <!-- effet de survol doux (from a linearapp feature) -->
     <script>
+        // Extracting user's mouse position
         document.getElementById("pagin").onmousemove = e => {
         for(const pagin of document.getElementsByClassName("pagin")) {
             const rect = pagin.getBoundingClientRect(),
                 x = e.clientX - rect.left,
                 y = e.clientY - rect.top;
-
             pagin.style.setProperty("--mouse-x", `${x}px`);
             pagin.style.setProperty("--mouse-y", `${y}px`);
         };
