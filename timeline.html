@@ -77,148 +77,149 @@
             </figure>
         </div>
         <!--------------------------------------------- Timeline --------------------------------------------------->
-        
-        <!-------Range Bootstrap 5------>
-        <div class="jumbotron" id="timeline_jumbo">
-            <h1 class="display-4 mx-2 text-muted">Retour vers mon futur (frise chronologique)</h1>
-            <hr class="my-4">
-        </div>
-        
-        <div class="container mb-5">
-            <div class="row mb-3">
-                <div class="d-flex align-content-around flex-wrap">
-                    <label for="range" class="form-label display-6">Timeline <h6>Déplacez le curseur vers les différentes frises</h6></label>
-                        <input type="range" class="form-range bg-light rounded-pill px-1" max="3" id="myRange" value="0"/>
-                                <script src="./js/range.js"> </script>
-                 </div>
-
+        <div class="wrapper">
+            <!-------Range Bootstrap 5------>
+            <div class="jumbotron" id="timeline_jumbo">
+                <h1 class="display-4 mx-2 text-muted">Retour vers mon futur (frise chronologique)</h1>
+                <hr class="my-4">
             </div>
-            <div class="row m-2">
-                <div class="col border-end border-primary me-2 border-2 shadow">
-                    <div class="card bg-gradient bg-transparent">
-                        <div class="card-body">
-                            <h5 class="card-title text-white-50">2016-2022</h5>
-                            <h3><span class="badge bg-success bg-gradient">School</span></h3> 
-                        </div>
+            
+            <div class="container mb-5">
+                <div class="row mb-3">
+                    <div class="d-flex align-content-around flex-wrap">
+                        <label for="range" class="form-label display-6">Timeline <h6>Déplacez le curseur vers les différentes frises</h6></label>
+                            <input type="range" class="form-range bg-light rounded-pill px-1" max="3" id="myRange" value="0"/>
+                                    <script src="./js/range.js"> </script>
                     </div>
-                </div>
-                <div class="col border-end border-primary me-1 border-2">
-                    <div class="card bg-gradient bg-transparent shadow">
-                        <div class="card-body">
-                            <h5 class="card-title text-white-50">2004-2022</h5>
-                            <h3><span class="badge bg-primary bg-gradient">Life</span></h3> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-end border-primary border-2">
-                    <div class="card bg-gradient bg-transparent shadow">
-                        <div class="card-body">
-                            <h5 class="card-title text-white-50">2008-2022</h5>
-                            <h3><span class="badge bg-warning bg-gradient">Other Stuff</span></h3> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-        <!--plusieurs timeline différentes ex: #school/#life/#autres selon la valeur du range-->
-        <div class="container bg-transparent rounded-3 mb-5 d-flex justify-content-center align-items-end">
-            <div class="container p-2 visually-hidden" id="school">
-                <div class="row justify-content-center">
-                    <!-- Emoticones associés -->
-                    <div class="col-2 d-none d-sm-none d-md-block my-2 mx-3 emoticones"> <!--Hidden on small pages-->
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F5FA;&#xFE0F;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F56F;&#xFE0F;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F393;</p>
-                    </div>
-                    <!-- Cards -->
-                    <div class="col-6 border-4 rounded-start border-start mx-3">
-                        <div class="card border-success m-3" style="max-width: 45rem;min-width: 15rem;">
-                            <div class="card-header text-black-50">2016 - 2017 - 2018</div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Voyages en Espagne</h5>
-                                <p class="card-text text-dark">
-                                    Lorsque j'étais collégien, je me suis rendu 3 fois sur le territoire espagnol. 
-                                    Ces voyages marquent mes premières prises d'indépendance puisque nous étions lâchés dans des villes inconnues chez des personnes
-                                    avec qui il était difficile de communiquer.
-                                </p>
+                </div>
+                <div class="row m-2">
+                    <div class="col border-end border-primary me-2 border-2 shadow">
+                        <div class="card bg-gradient bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title text-white-50">2016-2022</h5>
+                                <h3><span class="badge bg-success bg-gradient">School</span></h3> 
                             </div>
                         </div>
-                        <div class="card border-success mx-3 my-5" style="max-width: 45rem;min-width: 15rem;">
-                            <div class="card-header text-black-50">2018</div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Amnesty International</h5>
-                                <p class="card-text text-dark">
-                                    L'association Amnesty International a suivi ma classe lors de la création d'une maquette en mémoire aux déportés de la 2nd Guerre Mondiale, 
-                                    qui avait par la suite été exposée dans la Synagogue de Paris.
-                                </p>
+                    </div>
+                    <div class="col border-end border-primary me-1 border-2">
+                        <div class="card bg-gradient bg-transparent shadow">
+                            <div class="card-body">
+                                <h5 class="card-title text-white-50">2004-2022</h5>
+                                <h3><span class="badge bg-primary bg-gradient">Life</span></h3> 
                             </div>
                         </div>
-                        <div class="card border-success m-3" style="max-width: 45rem;min-width: 15rem;">
-                            <div class="card-header text-black-50">2022</div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title">Obtention du Baccalauréat</h5>
-                                <p class="card-text text-dark">
-                                    Suite à ces années de lycées mouvementées, j'obtiens mon diplôme avec mention "Bien", après une agréable terminale durant laquelle
-                                    je me suis fais de très bons souvenirs.  
-                                </p>
+                    </div>
+                    <div class="col border-end border-primary border-2">
+                        <div class="card bg-gradient bg-transparent shadow">
+                            <div class="card-body">
+                                <h5 class="card-title text-white-50">2008-2022</h5>
+                                <h3><span class="badge bg-warning bg-gradient">Other Stuff</span></h3> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container p-2 visually-hidden" id="life">
-                <div class="row justify-content-center">
-                    <!-- Emoticones associés -->
-                    <div class="col-2 mx-3 d-none d-sm-none d-md-block emoticones"> <!--Hidden on small pages-->
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-3" style="font-size:90px">&#129410;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2 mb-5 mt-4" style="font-size:90px">&#x1F3E1;</p>
-                        <p class="border-end border-2 border-dark rounded-pill p-2 my-3" style="font-size:90px">&#x1F913;</p>
-                    </div>
-                    <!-- Cards -->
+
+
+            <!--plusieurs timeline différentes ex: #school/#life/#autres selon la valeur du range-->
+            <div class="container bg-transparent rounded-3 mb-5 d-flex justify-content-center align-items-end">
+                <div class="container p-2 visually-hidden" id="school">
+                    <div class="row justify-content-center">
+                        <!-- Emoticones associés -->
+                        <div class="col-2 d-none d-sm-none d-md-block my-2 mx-3 emoticones"> <!--Hidden on small pages-->
+                            <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F5FA;&#xFE0F;</p>
+                            <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F56F;&#xFE0F;</p>
+                            <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F393;</p>
+                        </div>
+                        <!-- Cards -->
                         <div class="col-6 border-4 rounded-start border-start mx-3">
-                            <div class="card border-primary m-3" style="max-width: 45rem;min-width: 15rem;">
-                                <div class="card-header text-black-50">2004</div>
-                                <div class="card-body text-primary">
-                                    <h5 class="card-title mb-2">Ma naissance</h5>
-                                    <div class="d-flex align-items-center">
-                                        <p class="card-text text-dark">
-                                            Je suis né un beau jour dans un hôpital de Saint-Cloud (92210).
-
-                                        </p>
-                                    </div>
+                            <div class="card border-success m-3" style="max-width: 45rem;min-width: 15rem;">
+                                <div class="card-header text-black-50">2016 - 2017 - 2018</div>
+                                <div class="card-body text-success">
+                                    <h5 class="card-title">Voyages en Espagne</h5>
+                                    <p class="card-text text-dark">
+                                        Lorsque j'étais collégien, je me suis rendu 3 fois sur le territoire espagnol. 
+                                        Ces voyages marquent mes premières prises d'indépendance puisque nous étions lâchés dans des villes inconnues chez des personnes
+                                        avec qui il était difficile de communiquer.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card border-primary m-3 my-5" style="max-width: 45rem;min-width: 15rem;">
-                                <div class="card-header text-black-50">2012</div>
-                                <div class="card-body text-primary">
-                                    <h5 class="card-title mb-2">Déménagement</h5>
-                                    <div class="d-flex align-items-center">
-                                        <p class="card-text text-dark">
-                                            Ma famille part s'installer en Bretagne. 
-                                            
-                                        </p>
-                                    </div>
+                            <div class="card border-success mx-3 my-5" style="max-width: 45rem;min-width: 15rem;">
+                                <div class="card-header text-black-50">2018</div>
+                                <div class="card-body text-success">
+                                    <h5 class="card-title">Amnesty International</h5>
+                                    <p class="card-text text-dark">
+                                        L'association Amnesty International a suivi ma classe lors de la création d'une maquette en mémoire aux déportés de la 2nd Guerre Mondiale, 
+                                        qui avait par la suite été exposée dans la Synagogue de Paris.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card border-primary m-3" style="max-width: 45rem;min-width: 15rem;">
+                            <div class="card border-success m-3" style="max-width: 45rem;min-width: 15rem;">
                                 <div class="card-header text-black-50">2022</div>
-                                <div class="card-body text-primary">
-                                    <h5 class="card-title mb-2">Ma Première Compétition de Cybersécurité</h5>
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0 px-2">
-                                            <img src="img/flagmalo.fr.ico" alt="cacolac" style="height: 55px;">
-                                        </div>
-                                        <p class="card-text text-dark">
-                                            J'ai participé à un Capture The Flag ! Je vous laisse aller voir l'article à propos de <a href="blog.html" class="text-reset">cet événement</a>.
-                                        </p>
-                                    </div>
+                                <div class="card-body text-success">
+                                    <h5 class="card-title">Obtention du Baccalauréat</h5>
+                                    <p class="card-text text-dark">
+                                        Suite à ces années de lycées mouvementées, j'obtiens mon diplôme avec mention "Bien", après une agréable terminale durant laquelle
+                                        je me suis fais de très bons souvenirs.  
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div> 
+                <div class="container p-2 visually-hidden" id="life">
+                    <div class="row justify-content-center">
+                        <!-- Emoticones associés -->
+                        <div class="col-2 mx-3 d-none d-sm-none d-md-block emoticones"> <!--Hidden on small pages-->
+                            <p class="border-end border-2 border-dark rounded-pill p-2 my-3" style="font-size:90px">&#129410;</p>
+                            <p class="border-end border-2 border-dark rounded-pill p-2 mb-5 mt-4" style="font-size:90px">&#x1F3E1;</p>
+                            <p class="border-end border-2 border-dark rounded-pill p-2 my-3" style="font-size:90px">&#x1F913;</p>
+                        </div>
+                        <!-- Cards -->
+                            <div class="col-6 border-4 rounded-start border-start mx-3">
+                                <div class="card border-primary m-3" style="max-width: 45rem;min-width: 15rem;">
+                                    <div class="card-header text-black-50">2004</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title mb-2">Ma naissance</h5>
+                                        <div class="d-flex align-items-center">
+                                            <p class="card-text text-dark">
+                                                Je suis né un beau jour dans un hôpital de Saint-Cloud (92210).
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-primary m-3 my-5" style="max-width: 45rem;min-width: 15rem;">
+                                    <div class="card-header text-black-50">2012</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title mb-2">Déménagement</h5>
+                                        <div class="d-flex align-items-center">
+                                            <p class="card-text text-dark">
+                                                Ma famille part s'installer en Bretagne. 
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card border-primary m-3" style="max-width: 45rem;min-width: 15rem;">
+                                    <div class="card-header text-black-50">2022</div>
+                                    <div class="card-body text-primary">
+                                        <h5 class="card-title mb-2">Ma Première Compétition de Cybersécurité</h5>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 px-2">
+                                                <img src="img/flagmalo.fr.ico" alt="cacolac" style="height: 55px;">
+                                            </div>
+                                            <p class="card-text text-dark">
+                                                J'ai participé à un Capture The Flag ! Je vous laisse aller voir l'article à propos de <a href="blog.html" class="text-reset">cet événement</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div> 
+            </div>
 
             <div class="container p-2 visually-hidden" id="other">
                 <div class="row justify-content-center">
@@ -274,6 +275,7 @@
             <img id="trueno" class="position-relative d-none d-sm-none d-xl-block" src="img/ae86truenototyota.png" role="button">
             <script src="./js/little_car.js"> </script>
         </div>
+
 
                 <!--------------------------------------------- Pied de page --------------------------------------------------->
                 <footer class="footer d-flex justify-content-center px-5 pt-4">
