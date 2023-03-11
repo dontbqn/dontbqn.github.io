@@ -27,7 +27,7 @@
   text-align: center;
   height: 10%;
   width: 28%;
-  border-radius: 10px;
+  border-radius: 350px;
   cursor: pointer;
 }
 
@@ -40,10 +40,12 @@
   border-radius: inherit;
   content: "";
   height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.049);
+  transition: border-color 2s ease-in;
   left: 0px;
   opacity: 0;
-  position: absolute;
   top: 0px;
+  position: absolute;
   transition: opacity 500ms;
   width: 100%;
 }
@@ -78,15 +80,13 @@
   z-index: 2;
 }
 
-.logo{
-  color: linear-gradient(to bottom right, rgba(0, 0, 255, 0.293), rgba(255, 192, 203, 0.188));
-  transition: transform 0.9s;
-}
 
-.pagin .droppy a:hover /* Only for 2nd droppy */
+
+.pagin .droppy a:hover
 {
   border-radius: 0.3rem;
 }
+
 .dropdown-menu .link-light:focus{
   background-color: rgba(37, 28, 41, 0.434);
   border-radius: 0.3rem;
@@ -109,15 +109,32 @@
 @media(max-width: 500px) {
   .pagin {
     height: 80px;
-    width: calc(100% - 7px);
+    width: calc(100% - 10px);
   }
-  #pagin .droppy{
-    background: red;
+  .pagin .droppy{
+
+    border-radius: 5rem;
   }
 }
 
 @media(max-width: 320px) {
   .pagin {
     width: calc(90% - 7px);
+  }
+  .footer{
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+
+  .logo1:hover {
+    transform: scale(1.1) translate(-20%, -10%);
+  }
+  .logo2:hover {
+    transform: scale(1.1) translate(20%, -10%);
+
+  }
+  .logo3:hover {
+    transform: scale(1.1) translate(0%, -20%);
   }
 }
