@@ -127,13 +127,13 @@
                 <div class="container p-2 visually-hidden" id="school">
                     <div class="row justify-content-center">
                         <!-- Emoticones associés -->
-                        <div class="col-2 d-none d-sm-none d-md-block my-2 mx-3 emoticones border-4 rounded-end border-end"> <!--Hidden on small pages-->
+                        <div class="col-md-2 d-none d-sm-none d-md-block my-2 mx-3 emoticones border-4 rounded-end border-end"> <!--Hidden on small pages-->
                             <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F5FA;&#xFE0F;</p>
                             <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F56F;&#xFE0F;</p>
                             <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#x1F393;</p>
                         </div>
                         <!-- Cards -->
-                        <div class="col-6 mx-3">
+                        <div class="col-sm-9 col-lg-6 mx-3">
                             <div class="card border-success m-3" style="max-width: 45rem;min-width: 16rem;">
                                 <div class="card-header text-black-50">2016 - 2017 - 2018</div>
                                 <div class="card-body text-success">
@@ -177,7 +177,7 @@
                             <p class="border-end border-2 border-dark rounded-pill p-2 my-3" style="font-size:90px">&#x1F913;</p>
                         </div>
                         <!-- Cards -->
-                            <div class="col-6 mx-3">
+                            <div class="col-sm-9 col-lg-6 mx-3">
                                 <div class="card border-primary m-3" style="max-width: 45rem;min-width: 16rem;">
                                     <div class="card-header text-black-50">2004</div>
                                     <div class="card-body text-primary">
@@ -224,12 +224,12 @@
             <div class="container p-2 visually-hidden" id="other">
                 <div class="row justify-content-center">
                     <!-- Emoticones associés -->
-                    <div class="col-2 mx-3 d-none d-sm-none d-md-block emoticones border-4 rounded-end border-end"> <!--Hidden on small pages-->
+                    <div class="col-2 col-md-3 ms-md-3 mx-3 d-none d-sm-none d-md-block emoticones border-4 rounded-end border-end"> <!--Hidden on small pages-->
                         <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#127856;</p>
                         <p class="border-end border-2 border-dark rounded-pill p-2 my-5" style="font-size:90px">&#127926;</p>
                     </div>
                     <!-- Cards -->
-                    <div class="col-6 mx-3">
+                    <div class="col-sm-9 col-lg-6 col-md-5 mx-3">
                         <div class="card border-2 border-warning mx-3 my-3 shadow" style="max-width: 45rem;min-width: 16rem">
                             <div class="card-header text-black-50">2008</div>
                             <div class="card-body text-warning">
@@ -263,9 +263,19 @@
             </div>
         <!-- Next update : Timeline popups cards appearing at a certain scrollY -->
                     <script>
-                    window.addEventListener('scroll', () => {
-                        card.array.forEach(element => {
-                    });});
+                        if (window.innerWidth > 765 || window.innerWidth < 1000) {
+                            document.getElementsByClassName("emoticones")[0].classList.add("visually-hidden"); // not optimized
+                            document.getElementsByClassName("emoticones")[1].classList.add("visually-hidden"); // will do a foreach loop for
+                                                                                                               // next upate
+                            document.getElementsByClassName("emoticones")[2].classList.add("visually-hidden");
+                        }
+
+                        window.addEventListener('scroll', () => {
+                            v = document.getElementsByClassName("card border-warning m-3");
+                            if(document.documentElement.scrollTop > 150){
+                                v[0].classList.remove("visually-hidden");
+                            }
+                        });
                     </script>
 
 
