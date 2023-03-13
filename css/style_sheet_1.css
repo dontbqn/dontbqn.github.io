@@ -40,13 +40,13 @@ svg {
 header{
   background: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
+/* Navigation Bar Animations & Settings */
 .collapse.show{
   transition: all 0.5s ease-out;
 }
 .collapsing{
   transition: all 0.5s ease-out;
 }
-
 .droppy{
   transform: translate(69px, 19px) scaleX(0);
   transition: all 0.7s cubic-bezier(0.30,-0.14,.27,0.55);
@@ -62,6 +62,7 @@ header{
   color: darkblue;
 }
 
+/* Footer Logos */
 .logo{
   color: aliceblue;
   transition: transform 0.9s;
