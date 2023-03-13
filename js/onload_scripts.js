@@ -79,7 +79,7 @@ function NavigBarClick() {
 
 //Loading spinner spawning when the window loads
 function loading(){
-    document.getElementById("spinny").innerHTML = "<div class='float-end mt-4'><div class='spinner-border text-black-50 h1' style='width:3rem; height: 3rem;' role='status'><span class='visually-hidden'></span></div></div>";
+    document.getElementById("spinny").outerHTML = "<div class='float-end mt-4'><div class='spinner-border text-black-50 h1' style='width:3rem; height: 3rem;' role='status'><span class='visually-hidden'></span></div></div>";
     document.addEventListener('wheel', (event) => { // scroll up/down cancels loading spinner
         stoploading();
     });
@@ -98,7 +98,7 @@ function loading(){
 }
 
 function stoploading(){ // replace spinner by Adrien Crico's header 1
-    document.getElementById("entete").outerHTML = "<a href='index.html' class='text-decoration-none link-dark'><h1 class='text-dark display-4 mt-4' id='prnm_nm'>Adrien Crico</h1></a>";
+    document.getElementById("entete").outerHTML = "<a href='index.html' class='text-decoration-none link-dark'><h1 class='text-dark display-4' id='prnm_nm'>Adrien Crico</h1></a>";
 }
 /*
     When the user switch to another application, loading function is called back
