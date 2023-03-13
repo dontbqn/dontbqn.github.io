@@ -18,9 +18,11 @@
     <header id="header" class="py-3 shadow-lg p-3 mb-4 rounded-bottom sticky-top">
         <div class="row align-items-end mb-2">
             <div class="col-8 d-flex justify-content-end order-2">
-                <div class="jumbotron" id="entete">
-                    <h1 class="display-4 text-dark" id="prnm_nm"></h1>
-                </div>
+                <a href="index.html" class="text-decoration-none">
+                    <div class="jumbotron" id="entete">
+                        <h1 class="display-4 text-dark" id="prnm_nm"></h1>
+                    </div>
+                </a>
             </div>
             <div class="col-4 order-1">
                 <div class="collapse mb-3" id="navbarToggleCont">
@@ -30,7 +32,7 @@
                             <li class="nav-item"> <a class="nav-link link-dark" href="curriculumvitae.html">CV</a></li>
                             <li class="nav-item"><a class="nav-link link-dark" href="timeline.html">Timeline</a></li>
                             <li class="nav-item dropdown dropend">
-                                <a type="button" class="nav-link dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#">Autres</a>
+                                <a type="button" class="nav-link dropdown-toggle link-dark" data-bs-toggle="dropdown" id="O_droppy" href="#">Autres</a>
                                 <ul class="droppy dropdown-menu bg-transparent rounded-bottom rounded-end rounded-start rounded-3">
                                     <li><a class="dropdown-item text-decoration-none" href="blog.html">Blog</a></li>
                                     <li><a class="dropdown-item text-decoration-none" href="contacts.html">Contact</a></li>
@@ -49,11 +51,6 @@
                                 <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
                               </svg><span class="visually-hidden">O</span>
                         </button>
-                        <style> /*Pour permettre à l'utilisateur de cliquer au travers un svg (bouton navigation)*/
-                            svg {
-                                pointer-events: none;
-                                }
-                        </style>
                     </div>
                 </div>
             </div>

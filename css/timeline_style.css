@@ -3,17 +3,16 @@
     height: 55px;
     animation: tilt-shaking 0.3s infinite;
 }
-@keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(1deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-0.5deg); }
-    100% { transform: rotate(0deg); }
-  }
+
+    
+#trueno > #trueno:active{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 .emoticones p:hover{
     animation: tilt-shaking 0.3s ease;
 }
-
 
 .wrapper {
 	min-height:80vh; /* 1 */
@@ -24,3 +23,28 @@
 .footer {
 	flex-grow:1; /* 4 */
 }
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(1px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0deg); }
+  }

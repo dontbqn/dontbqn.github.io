@@ -18,9 +18,9 @@
         <header id="header" class="py-3 shadow-lg p-3 mb-4 rounded-bottom sticky-top"> 
            <div class="row align-items-end">
                 <div class="col-8 d-flex justify-content-end order-2">
-                    <div class="jumbotron" id="entete">
-                        <h1 class="display-4 text-dark" id="prnm_nm"></h1>
-                    </div>
+                        <div class="jumbotron" id="entete">
+                            <h1 class="display-4 text-dark" id="prnm_nm"></h1>
+                        </div>
                 </div>
                 <div class="col-4 order-1">
                     <div class="collapse" id="navbarToggleCont">
@@ -183,8 +183,7 @@
                                         <h5 class="card-title mb-2">Ma naissance</h5>
                                         <div class="d-flex align-items-center">
                                             <p class="card-text text-dark">
-                                                Je suis né un beau jour dans un hôpital de Saint-Cloud (92210).
-
+                                                Je suis né un beau jour dans un hôpital de Saint-Cloud (92).
                                             </p>
                                         </div>
                                     </div>
@@ -195,8 +194,7 @@
                                         <h5 class="card-title mb-2">Déménagement</h5>
                                         <div class="d-flex align-items-center">
                                             <p class="card-text text-dark">
-                                                Ma famille part s'installer en Bretagne. 
-                                                
+                                                Ma famille part s'installer en Bretagne.
                                             </p>
                                         </div>
                                     </div>
@@ -233,28 +231,36 @@
                             <div class="card-header text-black-50">2008</div>
                             <div class="card-body text-warning">
                                 <h5 class="card-title mb-2">le Concorde</h5>
-                                    <div class="float-start pe-3 d-none d-sm-none d-md-block">
-                                        <img src="img/concorde_lenotre.jpeg" title="Concorde" height="90px" width="130px">
+                                <div class="row">
+                                    <div class="col-2 d-none d-sm-none d-md-block">
+                                        <img src="img/concorde_lenotre.jpeg" title="Concorde" height="80px" width="120px">
                                     </div>
-                                    <p class="card-text text-dark">
-                                        Une recette de Le nôtre, célèbre patissier français.
-                                        Ce gateau se trouvait à chaque anniversaire sur notre table lorsque j'habitais Conflans-Sainte-Honorine.<br/>
-                                        Sa recette est maintenant convoitée et j'ai été surpris de retrouver l'une de ses versions (pas la meilleure..), dans une 
-                                        boulangerie proche de mon nouveau logement.
-                                    </p>
+                                    <div class="col-10">
+                                        <p class="card-text text-dark">
+                                            Une recette de Le nôtre, un célèbre patissier français.
+                                            Ce gateau se trouvait à chaque anniversaire sur notre table lorsque j'étais encore enfant.
+                                            Sa recette est maintenant convoitée et j'ai été surpris de retrouver l'une de ses versions (pas la meilleure..), dans une 
+                                            boulangerie proche de mon nouveau logement.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card border-warning my-5 m-3" style="max-width: 45rem;min-width: 16rem">
                             <div class="card-header text-black-50">2022</div>
                             <div class="card-body text-warning">
-                                <h5 class="card-title mb-2">Mes premières expériences musicales</h5>
-                                    <div class="float-start pe-2 d-none d-sm-none d-md-block">
-                                        <img src="img/victorhelenebasch.jpg" title="Victor&HélèneBasch" style="height: 60px;">
+                                <h5 class="card-title mb-2">Premières expériences musicales</h5>
+                                <div class="row">
+                                    <div class="col-2 d-none d-sm-none d-md-block">
+                                        <img src="img/victorhelenebasch.jpg" title="Victor&HélèneBasch" height="70px">
                                     </div>
-                                    <p class="card-text text-dark">
-                                        J'ai assisté à mes premiers concerts et festivals cette année. Ainsi, j'ai continué à développer mes goûts musicaux
-                                         et je me suis rendu à la rencontre des artistes locaux de Rennes grâce à un projet de radio indépendante, orientée culture / jeunesse.
-                                    </p>
+                                    <div class="col-10">
+                                        <p class="card-text text-dark">
+                                            J'ai assisté à mes premiers concerts et festivals cette année. Ainsi, j'ai continué à développer mes goûts musicaux
+                                            et j'ai pu rencontrer des artistes de Rennes grâce à un projet de radio indépendante, orientée culture / jeunesse.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,7 +284,7 @@
                     </script>
 
 
-            <div class="container mb-4">
+            <div class="container mb-4 animated_car">
                 <!-- Mini Trueno AE86 d'Initial D, le role bouton pour faire apparaitre le curseur -->
                 <img id="trueno" class="position-relative d-none d-sm-none d-xl-block" src="img/ae86truenototyota.png" role="button">
                 <script src="./js/little_car.js"> </script>
