@@ -1,5 +1,5 @@
 :root{
---main-bg-color: rgba(16, 14, 16, 0.986) ;
+--main-bg-color: rgba(16, 14, 16, 0.966) ;
 --main-btn-color: linear-gradient(to bottom right, rgb(167, 82, 204), rgba(167, 192, 203, 0.787)) ;
 }
 
@@ -43,7 +43,6 @@ header{
 .collapsing{
   transition: all 0.5s ease-out;
 }
-
 
 .droppy a:active{
   background: var(--main-btn-color);

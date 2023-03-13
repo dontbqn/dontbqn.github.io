@@ -3,9 +3,7 @@
     height: 55px;
     animation: tilt-shaking 0.3s infinite;
 }
-
-    
-#trueno > #trueno:active{
+#trueno:active::after{
     pointer-events: none;
     cursor: not-allowed;
 }
@@ -34,11 +32,11 @@
     }
   
     30%, 50%, 70% {
-      transform: translate3d(-2px, 0, 0);
+      transform: translate3d(-1px, 0, 0);
     }
   
     40%, 60% {
-      transform: translate3d(2px, 0, 0);
+      transform: translate3d(1px, 0, 0);
     }
   }
 @keyframes tilt-shaking {
